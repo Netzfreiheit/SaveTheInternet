@@ -1,0 +1,91 @@
+
+
+@font-face {
+	font-family: Bitter-Bold;
+	src: url('/fonts/Bitter-Bold.ttf');
+}
+
+@font-face {
+	font-family: Bitter-Regular;
+	src: url('/fonts/Bitter-Regular.ttf');
+}
+
+@font-face {
+	font-family: Bitter-Italic;
+	src: url('/fonts/Bitter-Italic.ttf');
+}
+
+
+body {
+	margin:0;
+	color: #111;
+	background: #eee;
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+	background: url(/img/topbg.png) top center repeat-x;
+	min-height: 340px;
+}
+
+.widesec {
+	width:100%;
+}
+
+.contentwidth {
+	width: 900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#logosec {
+	text-align:center;
+	padding: 10px;
+}
+
+#logo {
+	text-aign:center;
+}
+
+#omg {
+	font-family: Bitter-Bold;
+	font-size: 1.2em;
+	text-align:center;
+
+}
+
+.omgbuttonarea {
+	margin:13px 0 0;
+}
+
+.omgbutton {
+	font-family: Arial,Helvetica,sans-serif;
+	display: inline-block;
+	background: #222299;
+	background: linear-gradient(#3b98da,#2e86c6,#216595);
+	border-radius:5px;
+	color: #fff;
+	font-weight:bold;
+	font-size:.9em;
+	line-height:1em;
+	text-decoration:none;
+	padding: 8px 15px;
+	text-shadow: rgba(0,0,0,.4) 1px 1px;
+	box-shadow: rgba(0,0,0,.15) 0 2px 0; 
+}
+.omgbutton:hover {
+	background: linear-gradient(#50AFEA,#3597D3,#2D7FB2);
+}
+
+.vmid {
+	vertical-align:middle;
+}
+
+
+
+#orarrow {
+	background: url(/img/or_arrow.png) top center no-repeat;
+	min-height: 47px;
+	padding-top:.2em;
+}
