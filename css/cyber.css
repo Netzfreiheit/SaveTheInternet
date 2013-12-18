@@ -31,7 +31,7 @@ body {
 }
 
 #header {
-	background: #EAEEF3 url(/img/topbg.png) top center no-repeat;
+	background: #EAEEF3 url(../img/topbg.png) top center no-repeat;
 	min-height: 340px;
 }
 
