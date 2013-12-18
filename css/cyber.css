@@ -31,8 +31,14 @@ body {
 }
 
 #header {
-	background: #EAEEF3 url(/img/topbg.png) top center repeat-x;
+	background: #EAEEF3 url(/img/topbg.png) top center no-repeat;
 	min-height: 340px;
+}
+
+@media only screen and (min-width:1920px){
+	#header {
+		background-size: 100% 100%;
+	}
 }
 
 .widesec {
@@ -44,6 +50,7 @@ body {
 	*width: 800px;
 	margin-left:auto;
 	margin-right:auto;
+	padding:0 7px;
 }
 
 #logosec {
@@ -100,6 +107,7 @@ body {
 
 h2.headline {
 	font-family: Bitter-Bold, Georgia;
+	font-weight:normal;
 	box-shadow: rgba(0,0,0,.2) 2px 2px 0;
 	background: #fff;
 	display:inline-block;
@@ -165,7 +173,7 @@ h2.headline {
 }
 
 .desctext {
-	padding: 10px 0;
+	padding: 5px 0 10px;
 	font-size:.9em;
 	line-height: 1.2em;
 	text-shadow: rgba(255,255,255,.5) -1px -1px 2px;
@@ -187,9 +195,15 @@ h2.headline {
 	margin-top: -20px;
 	margin-right: -20px;
 }
+
+#whyheadline2 {
+	max-width: 385px;
+	*width: 385px;	
+}
+
 #whyheadline3 {
-	max-width: 280px;
-	*width: 280px;
+	max-width: 270px;
+	*width: 270px;
 }
 
 
@@ -201,10 +215,13 @@ h2.headline {
 
 
 #actteaser, #description {
-	margin: 20px 82px;
+	margin: 20px 0;
 	font-size:.9em;
 }
 
+.indentarea {
+	margin: 0 82px;
+}
 
 
 #calliframe {
@@ -223,5 +240,26 @@ footer {
 }
 
 #description {
+}
+
 	
+#shareside {
+	position:fixed;
+	z-index:10;
+	top:50%;
+	margin-top:-60px;
+	margin-left:-80px
+}
+#shareside > ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	border: rgba(255,255,255,.5) 6px solid;
+	border-radius:3px;
+	box-shadow: rgba(0,0,0,.2) 1px 2px 0;
+}
+#shareside > ul >li,#shareside > ul >li>a>img {
+	margin:0;
+	padding:0;
+	line-height: 0;
 }
