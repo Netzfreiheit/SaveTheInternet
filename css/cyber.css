@@ -225,7 +225,10 @@ h2.headline {
 
 
 #calliframe {
-	text-align:center;
+	background-color: #fff;
+	overflow: hidden;
+	height: 182px;
+	width: 612px;
 }
 
 
