@@ -2,17 +2,17 @@
 
 @font-face {
 	font-family: Bitter-Bold;
-	src: url('/fonts/Bitter-Bold.ttf');
+	src: url('../fonts/Bitter-Bold.ttf');
 }
 
 @font-face {
 	font-family: Bitter-Regular;
-	src: url('/fonts/Bitter-Regular.ttf');
+	src: url('../fonts/Bitter-Regular.ttf');
 }
 
 @font-face {
 	font-family: Bitter-Italic;
-	src: url('/fonts/Bitter-Italic.ttf');
+	src: url('../fonts/Bitter-Italic.ttf');
 }
 
 
@@ -99,7 +99,7 @@ body {
 
 
 #orarrow {
-	background: url(/img/or_arrow.png) top center no-repeat;
+	background: url(../img/or_arrow.png) top center no-repeat;
 	min-height: 47px;
 	padding-top:.2em;
 }
