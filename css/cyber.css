@@ -266,3 +266,62 @@ footer {
 	padding:0;
 	line-height: 0;
 }
+
+.ava-you,.ava-assistant  {
+	display:inline-block;
+}
+
+.ava-you {
+	float:left;
+}
+
+.ava-assistant {
+	float:right;
+}
+
+.bubble-assistant,
+.bubble-you  {
+	padding: 5px 10px;
+	display:inline-block;
+	max-width: 460px;
+	position: relative;
+	margin: 0 25px;
+	border-radius: 3px;
+	box-shadow: rgba(0,0,0,.2) 0 2px 1px;
+}
+
+.bubble-you:before  {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: -20px;
+	border-width: 15px 0 0 20px;
+	border-style: solid;
+	border-color: #D1DDEC transparent;
+	display: block;
+	width: 0;
+}
+
+.bubble-assistant:after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: -20px;
+	border-width: 15px 20px 0 0;
+	border-style: solid;
+	display: block;
+	width: 0;
+	border-color: #fff transparent;
+}
+
+
+.bubble-you  {
+	background: #D1DDEC;
+	float:left;
+}
+
+.bubble-assistant {
+	background: #fff;
+	float:right;
+}
+
