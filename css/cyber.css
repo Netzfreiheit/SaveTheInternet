@@ -300,6 +300,7 @@ footer {
 	border-radius: 3px;
 	box-shadow: rgba(0,0,0,.2) 0 4px 3px -3px;
 	font-size:.9em;
+	text-shadow: rgba(255,255,255,.3) -1px 1px;
 }
 
 .bubble-you:before  {
