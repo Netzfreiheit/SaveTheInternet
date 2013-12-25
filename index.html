@@ -10,6 +10,23 @@
   <meta name="author" content="Initiative für Netzfreiheit, European Digital Rights">
   <meta name="keywords" content="net neutrality, connected conntinent, digital single market, dsm, neelie kroes, Netzneutralität, drosselkom, specialised services, echtesnetz, BEREC, Internetneutralität, Plattformneutralität, Neutralitätsdebatte">
   <meta name="date" content="20013-07-30T03:05:07+02:00">
+  <script type="text/javascript">
+		function handle_actiontab (curr) {
+			if (curr === 'phone') {
+				document.getElementById('calliframe').style.display = 'block';
+				document.getElementById('mailiframe').style.display = 'none';
+				document.getElementsByClassName('actiontab_phone')[0].className = 'actiontab actiontab_phone active'; 
+				document.getElementsByClassName('actiontab_mail')[0].className = 'actiontab actiontab_mail'; 
+			}
+			else {
+				document.getElementById('calliframe').style.display = 'none';
+				document.getElementById('mailiframe').style.display = 'block';
+				document.getElementsByClassName('actiontab_phone')[0].className = 'actiontab actiontab_phone'; 
+				document.getElementsByClassName('actiontab_mail')[0].className = 'actiontab actiontab_mail active'; 
+			}
+			return false;
+		}
+	</script>
 
 	<!-- Piwik -->
 	<script type="text/javascript">
@@ -129,16 +146,18 @@
 					<p><b>Now, the European Parliament will decide over your rights and freedoms! On 27 February, the lead committee of the European Parliament (ITRE Committee) is scheduled to vote.</b></p>
 				</article>
 				<div class=actiontabs>
-					<a class=actiontab href=#>Phone</a>
-					<a class=actiontab href=#>E-Mail</a>
+					<a class="actiontab actiontab_phone active" href="#act" onClick="handle_actiontab('phone')">Phone</a>
+					<a class="actiontab actiontab_mail" href="#act" onClick="handle_actiontab('mail')">E-Mail</a>
+					<a class="actiontab" href="#learnmore">!</a>
+					<a class="actiontab" href="#howtocall">?</a>
 				</div>
 				<div class=actioncontent>
 					<div id=calliframe>
 						<object data="http://piphone.lqdn.fr/campaign/widget2/NetNeutrality-ITRE-nov_13/horiz/en" width="610" height="198" style="margin:-1px;overflow:hidden;" ></object>
 					</div>
-				
-					<!--<object data="http://localhost:8080" width="612" height="300" ></object>-->
-					<object data="http://pimail.tentacleriot.eu/" width="612" height="300" ></object>
+					<div id=mailiframe style="display: none">
+						<object data="http://pimail.tentacleriot.eu/" width="612" height="300" ></object>
+					</div>
 				</div>
 				<div class=clr></div>
 
