@@ -106,6 +106,11 @@ h3 {
 }
 
 
+.hmid {
+	text-align:center;
+}
+
+
 
 #orarrow {
 	background: url(../img/or_arrow.png) top center no-repeat;
@@ -234,7 +239,6 @@ h2.headline {
 
 
 #calliframe {
-	background-color: #fff;
 	overflow: hidden;
 	height: 170px;
 	width: 585px;
@@ -342,21 +346,50 @@ footer {
 
 
 .actiontabs {
-float:left;
+	float:left;
+	box-shadow: rgba(0,0,0,.2) 0px 1px 3px;
 }
 
 .actioncontent {
-float:left;
+	float:left;
+	background-color: #fff;
+	box-shadow: rgba(0,0,0,.2) 0 2px 4px;
 }
 
 /*item*/
 .actiontab {
 	display: block;
 	width: 60px;
-	height: 60px;
+	height: 50px;
+	padding: 5px 0;
 	text-align: center;
 	background: #fafafa;
-	border: 1px solid #ccc;
+	background: linear-gradient(#fafafa,#eee);
+	border-top: #fff 1px solid;
+	border-bottom: #ccc 1px solid;
+	color: #333;
+	text-decoration:none;
 }
 
+
+
+.sharebt {
+	padding: 4px 10px;
+	color:white;
+	display: inline-block;
+	margin:3px;
+	box-shadow: rgba(0,0,0,.2) 2px 2px;
+	text-decoration:none;
+	font-size: 14px;
+}
+
+.sm-fb {
+	background: #3A5A98;
+}
+.sm-tw {
+	background: #29A7DF;
+}
+.sm-gp {
+	background: #CC3731;
+}
 
