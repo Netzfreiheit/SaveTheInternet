@@ -437,7 +437,25 @@ td {
 	color: #aaa;
 }
 .footerlogos {
-	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.footerlogos > li {
+	display:inline-block;
+	margin:10px;
+	text-align:center;
+}
+
+.footerlogos > li > a > img {
+	display:block;
+}
+
+.footerlogos a {
+	color: inherit;
+	text-decoration:none;
 }
 
 @media screen and (max-width: 950px){
