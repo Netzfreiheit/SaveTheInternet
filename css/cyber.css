@@ -232,6 +232,7 @@ h2.headline {
 #act {
 	background: linear-gradient(#F3F3D1, #F5E88A);
 	padding: 18px 0;
+	box-shadow: rgba(0, 0, 0, 0.28) 0 2px 1px;
 }
 
 
@@ -243,6 +244,12 @@ h2.headline {
 .indentarea {
 	margin: 0 0 0 82px;
 }
+
+
+.indentarea2 {
+	margin: 0 0 0 82px ;
+}
+
 
 
 #calliframe {
@@ -446,5 +453,34 @@ td {
 	}
 	#shareside > ul >li>a>img {
 		
+	}
+}
+@media screen and (max-width: 770px){
+
+	#whypic3 {
+		margin:-100px 0 0;
+		float:none;
+	}
+	#whyheadline3 {
+		max-width: inherit;
+	}
+	
+	.indentarea2 {
+		margin: 0 20px;
+	}
+	
+	.actiontabs {
+		display:inline-block;
+	}
+	
+	.actiontab {
+		float:left;
+		width: 140px;
+		height:30px;
+		border-left: #fff 1px solid;
+		border-right: #ccc 1px solid;
+	}
+	.actiontab > img {
+		vertical-align:middle;
 	}
 }
