@@ -299,6 +299,11 @@ footer {
 	display:inline-block;
 }
 
+.ava-you, .ava-assistant {
+	font-weight: bold;
+	color: #555;
+}
+
 .ava-you {
 	float:left;
 }
@@ -309,6 +314,7 @@ footer {
 
 .chat {
 	max-width:650px;
+	margin-left: 40px;
 }
 
 .bubble-assistant,
@@ -429,6 +435,9 @@ td {
 .happened {
 	text-decoration: line-through;
 	color: #aaa;
+}
+.footerlogos {
+	
 }
 
 @media screen and (max-width: 950px){
