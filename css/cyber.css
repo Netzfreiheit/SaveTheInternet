@@ -273,7 +273,10 @@ h2.headline {
 	width: 610px;
 }
 
-
+#nextmep {
+	float: right;
+	font-size: .8em;
+}
 
 footer {
 	background-color: #444;
