@@ -228,6 +228,10 @@ h2.headline {
 	width:100%;
 }
 
+#act {
+	background: linear-gradient(#FFFFB2, #EBDB65);
+	padding: 18px 0;
+}
 
 
 #actteaser, #description {
