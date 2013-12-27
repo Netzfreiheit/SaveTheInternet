@@ -355,6 +355,7 @@ footer {
 .actiontabs {
 	float:left;
 	box-shadow: rgba(0,0,0,.2) 0px 1px 3px;
+	margin-top: 5px;
 }
 
 .actioncontent {
