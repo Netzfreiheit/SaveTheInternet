@@ -161,15 +161,16 @@ h2.headline {
 }
 #why1 {
 	/*background: linear-gradient(#EAEEF3,#BBC7DA);*/
-	background: linear-gradient(#F0F3F7,#DCE3EC,#BBC7DA);
+	background: linear-gradient(#F0F3F7,#E5E9EE,#D7DBE2);
+	
 	z-index:5
 }
 #why2 {
-	background: linear-gradient(#E7F1E7,#BCD1BE);
+	background: linear-gradient(#EEF3EE,#CFDFD1);
 	z-index:4
 }
 #why3 {
-	background: linear-gradient(#E7E3D6,#E9D7C0);
+	background: linear-gradient(#F0EFED,#E4DDD4);
 	z-index:3
 }
 
@@ -179,13 +180,13 @@ h2.headline {
 	z-index:1;
 }
 #floor1 {
-	background: linear-gradient(#B3C2DD,#A4BBD8);
+	background: linear-gradient(#CED5E2,#B6C0CC);
 }
 #floor2 {
-	background: linear-gradient(#ABCEB8,#9AC7AF);
+	background: linear-gradient(#C6DACD,#C2D6CB);
 }
 #floor3 {
-	background: linear-gradient(#DBCDB3,#DFC59F);
+	background: linear-gradient(#DBD3C2,#DFD4C5);
 }
 
 .desctext {
@@ -229,7 +230,7 @@ h2.headline {
 }
 
 #act {
-	background: linear-gradient(#FFFFB2, #EBDB65);
+	background: linear-gradient(#F3F3D1, #F5E88A);
 	padding: 18px 0;
 }
 
