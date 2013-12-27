@@ -28,9 +28,19 @@ body {
 
 h3 {
 	font-family: Bitter-Bold;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	margin: 1em 0;
 	text-align: center;
+}
+
+h4 {
+	font-family: Bitter-Bold;
+	font-size: 1.35em;
+	color
+}
+
+p {
+	line-height: 1.3em;
 }
 
 #logo {
@@ -262,7 +272,7 @@ h2.headline {
 
 footer {
 	background-color: #444;
-	color: #bbb;
+	color: #ccc;
 	min-height:200px;
 	margin-top: 80px;
 	box-shadow: #000 0 10px 10px -8px inset;
@@ -449,13 +459,10 @@ td {
 	text-align:center;
 }
 
-.footerlogos > li > a > img {
-	display:block;
-}
-
 .footerlogos a {
 	color: inherit;
 	text-decoration:none;
+	font-size: .9em;
 }
 
 @media screen and (max-width: 950px){
