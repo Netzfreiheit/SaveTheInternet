@@ -49,6 +49,17 @@
 	s.parentNode.insertBefore(g,s);
 	 })();
 	 <!-- End Piwik Code -->
+
+   function nextmep() {
+    var els=[document.getElementById("calliframe"),
+    document.getElementById("mailiframe")]
+    for (i in els) {
+      var e=els[i]
+      var h=e.innerHTML
+      e.innerHTML=""
+      e.innerHTML=h
+      }
+    }
 	</script>
 </head>
 <body>
@@ -164,6 +175,9 @@
 					</div>
 					
 					<div style="padding:10px;">
+            <a href="#act" onclick="nextmep()" id="nextmep">
+            Another MEP
+            </a>
 						<b>Help:</b><br>
 						&raquo; <a href="#learnmore">Arguments against specialised services</a><br>
 						&raquo; <a href="#howtocall">How to call MEPs</a>
