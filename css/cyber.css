@@ -43,6 +43,10 @@ p {
 	line-height: 1.3em;
 }
 
+img {
+	border:0;
+}
+
 #logo {
 	width:100%;
 	max-width: 470px;
