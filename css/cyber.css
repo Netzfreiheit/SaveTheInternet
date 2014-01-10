@@ -478,6 +478,35 @@ td {
 	font-size: .9em;
 }
 
+#langswitch {
+	float:right;
+	font-size:.9em;
+	line-height:1em;
+}
+
+#langswitch > ul {
+	margin:5px;
+	padding:0;
+	list-style-type:none;
+}
+
+#langswitch > ul > li {
+	color: #555;
+	padding: 0 .5em;
+	border-left: 1px solid #555;
+	float:left;
+}
+
+#langswitch > ul > li:first-child {
+	border-left: none;
+}
+
+#langswitch > ul > li  > a {
+color: #555;
+text-decoration:none;
+}
+
+
 @media screen and (max-width: 950px){
     #shareside {
 		position: fixed;
