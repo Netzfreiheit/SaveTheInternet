@@ -11,38 +11,8 @@
   <meta name="author" content="Initiative für Netzfreiheit, European Digital Rights">
   <meta name="keywords" content="net neutrality, connected conntinent, digital single market, dsm, neelie kroes, Netzneutralität, drosselkom, specialised services, echtesnetz, BEREC, Internetneutralität, Plattformneutralität, Neutralitätsdebatte">
   <meta name="date" content="20013-07-30T03:05:07+02:00">
-  <script type="text/javascript">
-		function handle_actiontab (curr) {
-			if (curr === 'phone') {
-				document.getElementById('calliframe').style.display = 'block';
-				document.getElementById('mailiframe').style.display = 'none';
-				document.getElementsByClassName('actiontab_phone')[0].className = 'actiontab actiontab_phone active'; 
-				document.getElementsByClassName('actiontab_mail')[0].className = 'actiontab actiontab_mail'; 
-			}
-			else {
-				document.getElementById('calliframe').style.display = 'none';
-				document.getElementById('mailiframe').style.display = 'block';
-				document.getElementsByClassName('actiontab_phone')[0].className = 'actiontab actiontab_phone'; 
-				document.getElementsByClassName('actiontab_mail')[0].className = 'actiontab actiontab_mail active'; 
-			}
-			return false;
-		}
-	</script>
-
-	<script type="text/javascript">
-
-   function nextmep() {
-    var els=[document.getElementById("calliframe"),
-    document.getElementById("mailiframe")]
-    for (i in els) {
-      var e=els[i]
-      var h=e.innerHTML
-      e.innerHTML=""
-      e.innerHTML=h
-      }
-    }
-	</script>
 	<script type="text/javascript" src="/js/jquery-latest.js"></script>
+  <script type="text/javascript" src="/js/strg_s.js"></script>
 </head>
 <body>
 	<noscript>
@@ -575,6 +545,7 @@
 	</footer>
 
 </div>
+
 <!-- Piwik -->
 <script type="text/javascript">
  var _paq = _paq || [];
@@ -597,23 +568,6 @@ s.parentNode.insertBefore(g,s);
  })();
 </script>
  <!-- End Piwik Code -->
-
-  <script type="text/javascript">
-     <!--
-    $(function () {
-     $('span.mailcheat').each(
-       function (i, el) {         
-         if ($(el).attr('locip')) {
-         	 var host = $(el).attr('domip') || window.location.host
-         	 var mail = $(el).attr('locip') + '@' + host;
-           $(el).html('<a href="mailto:' + mail + '">' + ($(el).attr('inner') || mail || el.innerText || 'mail') + '</a>');
-         } else {
-           $(el).html(el.innerText.replace(/^(\w+\.\w+) \\at\\ (okfn.at)/, '<a href="mailto:$1@$2">$1@$2</a>'));
-         }
-      });
-    });
-     //-->
-  </script>
 
 </body>
 </html>

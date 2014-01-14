@@ -11,58 +11,8 @@
   <meta name="author" content="Initiative für Netzfreiheit, European Digital Rights">
   <meta name="keywords" content="net neutrality, connected continent, digital single market, dsm, neelie kroes, Netzneutralität, drosselkom, specialised services, echtesnetz, BEREC, Internetneutralität, Plattformneutralität, Neutralitätsdebatte, neutralność sieci, połączony kontynent">
   <meta name="date" content="20013-07-30T03:05:07+02:00">
-  <script type="text/javascript">
-                function handle_actiontab (curr) {
-                        if (curr === 'phone') {
-                                document.getElementById('calliframe').style.display = 'block';
-                                document.getElementById('mailiframe').style.display = 'none';
-                                document.getElementsByClassName('actiontab_phone')[0].className = 'actiontab actiontab_phone active'; 
-                                document.getElementsByClassName('actiontab_mail')[0].className = 'actiontab actiontab_mail'; 
-                        }
-                        else {
-                                document.getElementById('calliframe').style.display = 'none';
-                                document.getElementById('mailiframe').style.display = 'block';
-                                document.getElementsByClassName('actiontab_phone')[0].className = 'actiontab actiontab_phone'; 
-                                document.getElementsByClassName('actiontab_mail')[0].className = 'actiontab actiontab_mail active'; 
-                        }
-                        return false;
-                }
-        </script>
-
-        <!-- Piwik -->
-        <script type="text/javascript">
-         var _paq = _paq || [];
-         _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-         _paq.push(["setCookieDomain", "*.savetheinternet.eu"]);
-         _paq.push(["setDomains", ["*.savetheinternet.eu"]]);
-         _paq.push(["setDoNotTrack", true]);
-         _paq.push(["trackPageView"]);
-         _paq.push(["enableLinkTracking"]);
-
-         (function() {
-           var u=(("https:" == document.location.protocol) ? "https" : "http")
-        + "://piwik.netzfreiheit.org/";
-           _paq.push(["setTrackerUrl", u+"piwik.php"]);
-           _paq.push(["setSiteId", "11"]);
-           var d=document, g=d.createElement("script"),
-        s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-           g.defer=true; g.async=true; g.src=u+"piwik.js";
-        s.parentNode.insertBefore(g,s);
-         })();
-         <!-- End Piwik Code -->
-
-   function nextmep() {
-    var els=[document.getElementById("calliframe"),
-    document.getElementById("mailiframe")]
-    for (i in els) {
-      var e=els[i]
-      var h=e.innerHTML
-      e.innerHTML=""
-      e.innerHTML=h
-      }
-    }
-        </script>
-    <script type="text/javascript" src="/js/jquery-latest.js"></script>
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+  <script type="text/javascript" src="/js/strg_s.js"></script>
 </head>
 <body>
         <noscript>
@@ -586,3 +536,29 @@
         </footer>
 
 </div>
+
+    <!-- Piwik -->
+<script type="text/javascript">
+ var _paq = _paq || [];
+ _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+ _paq.push(["setCookieDomain", "*.savetheinternet.eu"]);
+ _paq.push(["setDomains", ["*.savetheinternet.eu"]]);
+ _paq.push(["setDoNotTrack", true]);
+ _paq.push(["trackPageView"]);
+ _paq.push(["enableLinkTracking"]);
+
+ (function() {
+   var u=(("https:" == document.location.protocol) ? "https" : "http")
++ "://piwik.netzfreiheit.org/";
+   _paq.push(["setTrackerUrl", u+"piwik.php"]);
+   _paq.push(["setSiteId", "11"]);
+   var d=document, g=d.createElement("script"),
+s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+   g.defer=true; g.async=true; g.src=u+"piwik.js";
+s.parentNode.insertBefore(g,s);
+ })();
+</script>
+ <!-- End Piwik Code -->
+
+</body>
+</html>
