@@ -25,7 +25,7 @@ european campaign website to protect the free and neutral internet [SaveTheInter
 
 **UPDATE:** please always work on up-to-date versions of your forked repository. if you forked your repository some time back then better delete it and fork again (or use comand line to update). 
 
-###How can I translate? 
+###My language is missing! How can I translate the website into another language? 
 
 It's easy: 
 - just follow the above instructions to create your working copy of the website. 
@@ -34,4 +34,3 @@ It's easy:
 - translate all english texts into your language
 - commit & make a pull request
 - **you'r done!**
-
