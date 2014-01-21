@@ -464,6 +464,7 @@ td {
 	padding: 0;
 	list-style: none;
 	text-align: center;
+	margin: 0 -30px;
 }
 
 .footerlogos > li {
