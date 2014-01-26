@@ -248,7 +248,7 @@ h2.headline {
 	width:100%;
 }
 
-#act {
+#actsection {
 	background: linear-gradient(#F3F3D1, #F5E88A);
 	padding: 18px 0;
 	box-shadow: rgba(0, 0, 0, 0.28) 0 2px 1px;
@@ -618,3 +618,5 @@ nav .right {
 		vertical-align:middle;
 	}
 }
+
+span.anchor {display: block; position: relative; top: -60px; visibility: hidden;}
