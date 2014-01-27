@@ -415,7 +415,9 @@ footer {
 	text-decoration:none;
 }
 
-
+.actiontab.active {
+  background: linear-gradient(#fafafa,#919191);
+}
 
 .sharebt {
 	padding: 4px 10px;
