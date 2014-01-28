@@ -28,6 +28,7 @@ function handle_actiontab (curr) {
 
 function nextmep() {
   var els=[document.getElementById("calliframe"),
+  document.getElementById("faxiframe"),
   document.getElementById("mailiframe")]
   for (i in els) {
     var e=els[i]
