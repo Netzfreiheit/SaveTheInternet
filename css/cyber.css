@@ -590,6 +590,20 @@ nav .right {
 	#shareside > ul >li>a>img {
 		
 	}
+
+	nav, .logo {
+		#position: absolute !important;
+	}
+	nav a {
+		font-size: 0.8em;
+		margin: 0;
+	}
+	nav .right {
+		padding: 0 0 0 60px;
+	}
+	nav .left {
+		padding: 0 60px 0 0;
+	}
 }
 @media screen and (max-width: 770px){
 
