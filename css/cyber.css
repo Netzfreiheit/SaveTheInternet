@@ -416,7 +416,7 @@ footer {
 }
 
 .actiontab.active {
-  background: linear-gradient(#fafafa,#919191);
+	background: linear-gradient(#fafafa,#919191);
 }
 
 .sharebt {
