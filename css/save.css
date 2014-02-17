@@ -305,15 +305,33 @@ td > a {
 	padding: 10px 0 40px;
 }
 
+.callimg {
+	_width: 800px;
+	width:100%;
+	max-width: 800px;
+}
+
 .actbox {
 	background: #fff;
 	margin-top:10px;
-/*	float:left;	*/
-}
-#actboxphone {
-/*	margin-right:8px; */
+	color: #eb1c23;
+	position:relative;
 }
 
+.actboxitem {
+	margin: 0 0 0 158px;
+	padding: 0 0 20px;
+}
+
+.nextmep {
+	font: 16px Montserrat-Bold;
+	cursor: pointer;
+	display:inline-block;
+	padding: 0 20px 20px 0;
+	position:absolute;
+	bottom:0;
+	right:0;
+}
 
 #sharebox {
 	text-align:center;
@@ -530,7 +548,10 @@ footer {
 }
 
 
-
+#bannervert {
+	float:right;
+	margin-bottom: 20px;
+}
 
 @media screen and (max-width: 770px){
 
@@ -550,6 +571,26 @@ footer {
 	
 	#langnav {
 		margin-right:10px;
+	}
+	.nextmep {
+		position: relative;
+		margin-left: 40px;
+	}
+	
+	#bannerbox {
+		text-align:center;
+	}
+	#bannerbt {
+		width: 90%;
+		margin: 0 5% 30px;
+	}
+	#bannervert {
+		float:none;
+	}
+
+	.actboxitem {
+		margin: 0 0 0 40px;
+		padding: 0 0 20px;
 	}
 
 }
