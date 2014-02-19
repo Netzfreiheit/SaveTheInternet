@@ -134,8 +134,13 @@ img {
 
 #orarrow {
 	background: url(../img/or_arrow.png) top center no-repeat;
-	min-height: 47px;
-	padding-top:.2em;
+	min-width: 70px;
+	min-height: 27px;
+	_width: 70px;
+	_height: 27px;
+	padding: 6px 10px 14px;
+	background-size: 100% 100%;
+	display:inline-block;
 }
 
 
