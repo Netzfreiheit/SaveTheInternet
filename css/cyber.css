@@ -269,7 +269,9 @@ h2.headline {
 
 
 .indentarea2 {
-	margin: 0 0 0 82px ;
+	margin: 0 auto;
+	max-width: 720px;
+	_width:720px;
 }
 
 
@@ -649,9 +651,7 @@ section.widesec {
 	}
 	
 	.indentarea2 {
-		margin: 0 auto;
-		max-width: 720px;
-		_width:720px;
+		margin: 0 10px;
 	}
 	
 	.actiontabs {
