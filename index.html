@@ -14,12 +14,12 @@
 
 	<script>
 	$(function () {
-	  if (typeof shares === 'undefined') {
-		var shares = {'twitter': 1201 , 'facebook': 2268 , 'linkedin': 3 , 'google': 268 , 'delicious': 0 , 'stumble': 4}
+	  if (typeof window.shares === 'undefined') {
+		window.shares = {'twitter': 1833 , 'facebook': 3165 , 'linkedin': 3 , 'google': 385 , 'delicious': 0 , 'stumble': 4};
 	  }
-	  $('#tw_counter').html(shares['twitter'] );
-	  $('#fb_counter').html(shares['facebook']);
-	  $('#gp_counter').html(shares['google']);
+	  $('#tw_counter').html(window.shares['twitter'] );
+	  $('#fb_counter').html(window.shares['facebook']);
+	  $('#gp_counter').html(window.shares['google']);
 	})
 	</script>
 	
