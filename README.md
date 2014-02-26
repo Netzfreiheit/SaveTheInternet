@@ -33,4 +33,4 @@ It's easy:
 - copy the index.html file into this folder
 - translate all english texts into your language
 - commit & make a pull request
-- **you'r done!**
+- **you're done!**
