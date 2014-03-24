@@ -51,3 +51,64 @@ $(function () {
      }
   });
 });
+
+// countdown 
+var _translate_twords = {
+  'en': {'hs': 'hours', 'ds': 'days', 'ms': 'minutes', 'ss': 'seconds', 'h': 'hour', 'd': 'day', 'm': 'minute', 's': 'second', 'suffix': 'until the vote', 'prefix': 'Plenary Vote in'}
+  , 'de': {'hs': 'Stunden', 'ds': 'Tage', 'ms': 'Minuten', 'ss': 'Sekunden', 'h': 'Stunde', 'd': 'Tag', 'm': 'Minute', 's': 'Sekunde', 'suffix': 'bis zur Abstimmung', 'prefix': 'Abstimmung in'}
+  , 'fr': {'hs': 'heures', 'ds': 'jours', 'ms': 'minutes', 'ss': 'secondes', 'h': 'heure', 'd': 'jour', 'm': 'minute', 's': 'seconde', 'suffix': 'jusqu\'au vote', 'prefix': 'Vote dans'}
+  , 'es': {'hs': 'horas', 'ds': 'días', 'ms': 'minutos', 'ss': 'segundos', 'h': 'hora', 'd': 'día', 'm': 'minuto', 's': 'segundo', 'suffix': 'hasta el voto', 'prefix': 'Voto en'}
+};
+var plenary_vote = new Date(2014, 3, 3, 11, 30);
+
+function setCountdown (e, twords) {
+  var ms = plenary_vote.valueOf()-(new Date()).valueOf()
+    , d = Math.floor(ms/(1000*60*60*24))
+    , h = Math.floor(ms/(1000*60*60)%24)
+    , m = Math.floor(ms/(1000*60)%60)
+    , s = Math.floor(ms/1000%60)
+    , o = []
+  ;
+  if (d > 1) {
+    o.push(d + ' ' + twords['ds']);
+  }
+  else if (d == 1) {
+    o.push(d + ' ' + twords['d']);
+  }
+  if (h > 1) {
+    o.push(h + ' ' + twords['hs']);
+  }
+  else if (h == 1 || m != 0 || s != 0) {
+    o.push(h + ' ' + twords['h']);
+  }
+  if (m > 1) {
+    o.push(m + ' ' + twords['ms']);
+  }
+  else if (m == 1 || s != 0) {
+    o.push(m + ' ' + twords['m']);
+  }
+  if (s > 1) {
+    o.push(s + ' ' + twords['ss']);
+  }
+  else if (s == 1) {
+    o.push(s + ' ' + twords['s']);
+  }
+  //o = o.join(' ') + ' ' + twords['suffix'];
+  o = twords['prefix'] + ' ' +  o.join(' '); 
+  $(e).html(o);
+}
+
+$(function () {
+  try {
+    var twords = _translate_twords[((window.location.pathname + '').match(/\w\w/)||[])[0]||'en'];
+    var e = $('.countdown'); 
+    if (e) {
+      setCountdown(e, twords);
+      window.setInterval(function () {
+        setCountdown(e, twords);
+      }, 1000);
+    }
+  } catch (e) {
+    console.error('error in countdown', e);
+  }
+})

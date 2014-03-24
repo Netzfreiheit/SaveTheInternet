@@ -26,6 +26,11 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.countdown {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
 h3 {
 	font-family: Bitter-Bold;
 	font-size: 1.6em;
@@ -676,4 +681,3 @@ section.widesec {
 		margin:0;
 	}
 }
-
