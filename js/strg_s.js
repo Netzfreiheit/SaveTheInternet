@@ -54,10 +54,10 @@ $(function () {
 
 // countdown 
 var _translate_twords = {
-  'en': {'hs': 'hours', 'ds': 'days', 'ms': 'minutes', 'ss': 'seconds', 'h': 'hour', 'd': 'day', 'm': 'minute', 's': 'second', 'suffix': 'until the vote', 'prefix': 'Plenary Vote in'}
-  , 'de': {'hs': 'Stunden', 'ds': 'Tage', 'ms': 'Minuten', 'ss': 'Sekunden', 'h': 'Stunde', 'd': 'Tag', 'm': 'Minute', 's': 'Sekunde', 'suffix': 'bis zur Abstimmung', 'prefix': 'Abstimmung in'}
-  , 'fr': {'hs': 'heures', 'ds': 'jours', 'ms': 'minutes', 'ss': 'secondes', 'h': 'heure', 'd': 'jour', 'm': 'minute', 's': 'seconde', 'suffix': 'jusqu\'au vote', 'prefix': 'Vote dans'}
-  , 'es': {'hs': 'horas', 'ds': 'días', 'ms': 'minutos', 'ss': 'segundos', 'h': 'hora', 'd': 'día', 'm': 'minuto', 's': 'segundo', 'suffix': 'hasta el voto', 'prefix': 'Voto en'}
+  'en': {'hs': 'hours', 'ds': 'days', 'ms': 'minutes', 'ss': 'seconds', 'h': 'hour', 'd': 'day', 'm': 'minute', 's': 'second', 'suffix': 'until the vote', 'prefix': 'Plenary Vote in', 'smprefix': '', 'smsuffix': ' left to save the internet. Take Action on http://savetheinternet.eu #NetNeutarlity '}
+  , 'de': {'hs': 'Stunden', 'ds': 'Tagen', 'ms': 'Minuten', 'ss': 'Sekunden', 'h': 'Stunde', 'd': 'Tag', 'm': 'Minute', 's': 'Sekunde', 'suffix': 'bis zur Abstimmung', 'prefix': 'Abstimmung in', 'smprefix': 'Noch ', 'smsuffix': ' Zeit um das Internet zu retten. Take Action on http://savetheinternet.eu/de #Netzneutralität'}
+  , 'fr': {'hs': 'heures', 'ds': 'jours', 'ms': 'minutes', 'ss': 'secondes', 'h': 'heure', 'd': 'jour', 'm': 'minute', 's': 'seconde', 'suffix': 'jusqu\'au vote', 'prefix': 'Vote dans', 'smprefix': 'Plus que ', 'smsuffix': ' pour sauver internet. Agissez, rendez-vous sur http://savetheinternet.eu/fr #netneutralité'}
+  , 'es': {'hs': 'horas', 'ds': 'días', 'ms': 'minutos', 'ss': 'segundos', 'h': 'hora', 'd': 'día', 'm': 'minuto', 's': 'segundo', 'suffix': 'hasta el voto', 'prefix': 'Voto en', 'smprefix': 'Quedan ', 'smsuffix': ' para salvar internet. Actúa ahora en http://savetheinternet.eu/es #neutralidaddelared'}
 };
 var plenary_vote = new Date(2014, 3, 3, 11, 30);
 
@@ -78,13 +78,13 @@ function setCountdown (e, twords) {
   if (h > 1) {
     o.push(h + ' ' + twords['hs']);
   }
-  else if (h == 1 || m != 0 || s != 0) {
+  else if (h == 1) {
     o.push(h + ' ' + twords['h']);
   }
   if (m > 1) {
     o.push(m + ' ' + twords['ms']);
   }
-  else if (m == 1 || s != 0) {
+  else if (m == 1) {
     o.push(m + ' ' + twords['m']);
   }
   if (s > 1) {
@@ -93,15 +93,24 @@ function setCountdown (e, twords) {
   else if (s == 1) {
     o.push(s + ' ' + twords['s']);
   }
+  setSMLinks(o, twords, e);
+
   //o = o.join(' ') + ' ' + twords['suffix'];
   o = twords['prefix'] + ' ' +  o.join(' '); 
   $(e).html(o);
+
+}
+
+function setSMLinks(o, twords, e) {
+  var tweet = 'http://twitter.com/home?status=' + encodeURIComponent((twords['smprefix']||'') + o.join(' ') + (twords['smsuffix']||''));
+  $('#tw_count_bg a').attr('href', tweet);
+  $(e).attr('href', tweet);
 }
 
 $(function () {
   try {
     var twords = _translate_twords[((window.location.pathname + '').match(/\w\w/)||[])[0]||'en'];
-    var e = $('.countdown'); 
+    var e = $('.countdown a'); 
     if (e) {
       setCountdown(e, twords);
       window.setInterval(function () {
