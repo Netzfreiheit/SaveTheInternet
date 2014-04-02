@@ -69,36 +69,37 @@ function setCountdown (e, twords) {
     , s = Math.floor(ms/1000%60)
     , o = []
   ;
-  if (d > 1) {
-    o.push(d + ' ' + twords['ds']);
-  }
-  else if (d == 1) {
-    o.push(d + ' ' + twords['d']);
-  }
-  if (h > 1) {
-    o.push(h + ' ' + twords['hs']);
-  }
-  else if (h == 1) {
-    o.push(h + ' ' + twords['h']);
-  }
-  if (m > 1) {
-    o.push(m + ' ' + twords['ms']);
-  }
-  else if (m == 1) {
-    o.push(m + ' ' + twords['m']);
-  }
-  if (s > 1) {
-    o.push(s + ' ' + twords['ss']);
-  }
-  else if (s == 1) {
-    o.push(s + ' ' + twords['s']);
-  }
-  setSMLinks(o, twords, e);
+  if (ms > 0) {
+    if (d > 1) {
+      o.push(d + ' ' + twords['ds']);
+    }
+    else if (d == 1) {
+      o.push(d + ' ' + twords['d']);
+    }
+    if (h > 1) {
+      o.push(h + ' ' + twords['hs']);
+    }
+    else if (h == 1) {
+      o.push(h + ' ' + twords['h']);
+    }
+    if (m > 1) {
+      o.push(m + ' ' + twords['ms']);
+    }
+    else if (m == 1) {
+      o.push(m + ' ' + twords['m']);
+    }
+    if (s > 1) {
+      o.push(s + ' ' + twords['ss']);
+    }
+    else if (s == 1) {
+      o.push(s + ' ' + twords['s']);
+    }
+    setSMLinks(o, twords, e);
 
-  //o = o.join(' ') + ' ' + twords['suffix'];
-  o = twords['prefix'] + ' ' +  o.join(' '); 
-  $(e).html(o);
-
+    //o = o.join(' ') + ' ' + twords['suffix'];
+    o = twords['prefix'] + ' ' +  o.join(' '); 
+    $(e).html(o);
+  }
 }
 
 function setSMLinks(o, twords, e) {
