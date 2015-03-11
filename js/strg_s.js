@@ -1,25 +1,25 @@
 function handle_actiontab (curr) {
 	if (curr === 'phone') {
-	  document.getElementById('calliframe').style.display = 'block';
+	  document.getElementById('tweetiframe').style.display = 'block';
 	  document.getElementById('mailiframe').style.display = 'none';
     document.getElementById('faxiframe').style.display = 'none';
-	  document.getElementsByClassName('actiontab_phone')[0].className = 'actiontab actiontab_phone active'; 
+	  document.getElementsByClassName('actiontab_tweet')[0].className = 'actiontab actiontab_tweet active'; 
 	  document.getElementsByClassName('actiontab_mail')[0].className = 'actiontab actiontab_mail'; 
     document.getElementsByClassName('actiontab_fax')[0].className = 'actiontab actiontab_fax'; 
 	}
   else if (curr === 'fax') {
-    document.getElementById('calliframe').style.display = 'none';
+    document.getElementById('tweetiframe').style.display = 'none';
     document.getElementById('faxiframe').style.display = 'block';
     document.getElementById('mailiframe').style.display = 'none';
-    document.getElementsByClassName('actiontab_phone')[0].className = 'actiontab actiontab_phone'; 
+    document.getElementsByClassName('actiontab_tweet')[0].className = 'actiontab actiontab_tweet'; 
     document.getElementsByClassName('actiontab_fax')[0].className = 'actiontab actiontab_fax active';
     document.getElementsByClassName('actiontab_mail')[0].className = 'actiontab actiontab_mail'; 
   }
 	else {
-	  document.getElementById('calliframe').style.display = 'none';
+	  document.getElementById('tweetiframe').style.display = 'none';
     document.getElementById('faxiframe').style.display = 'none';
 	  document.getElementById('mailiframe').style.display = 'block';
-	  document.getElementsByClassName('actiontab_phone')[0].className = 'actiontab actiontab_phone'; 
+	  document.getElementsByClassName('actiontab_tweet')[0].className = 'actiontab actiontab_tweet'; 
     document.getElementsByClassName('actiontab_fax')[0].className = 'actiontab actiontab_fax';
 	  document.getElementsByClassName('actiontab_mail')[0].className = 'actiontab actiontab_mail active'; 
 	}
@@ -27,9 +27,9 @@ function handle_actiontab (curr) {
 }
 
 function nextmep() {
-  var els=[document.getElementById("calliframe"),
+  var els=[document.getElementById("tweetiframe"),
   document.getElementById("faxiframe"),
-  document.getElementById("mailiframe")]
+  document.getElementById("mailiframe")];
   for (i in els) {
     var e=els[i]
     var h=e.innerHTML
@@ -52,6 +52,7 @@ $(function () {
   });
 });
 
+/*
 // countdown 
 var _translate_twords = {
   'en': {'hs': 'hours', 'ds': 'days', 'ms': 'minutes', 'ss': 'seconds', 'h': 'hour', 'd': 'day', 'm': 'minute', 's': 'second', 'suffix': 'until the vote', 'prefix': 'Plenary Vote in', 'smprefix': '', 'smsuffix': ' left to save the internet. Take Action on http://savetheinternet.eu #NetNeutrality '}
@@ -121,4 +122,28 @@ $(function () {
   } catch (e) {
     console.error('error in countdown', e);
   }
-})
+});
+*/
+
+function reduce_meps() {
+  var s, l = []
+  if (s = $('#country_selector').val()) {
+    l.push('country=' + s);
+  }
+  if (s = $('#group_selector').val()) {
+    l.push('group=' + s);
+  }
+  console.log(l);
+  $('#tweetiframe object, #faxiframe object, #mailiframe object').each(function (i, e) {
+    console.log(l, $(e).attr('data').replace(/\?.*/,'') + '?' + l.join('&'));
+    $(e).attr('data', $(e).attr('data').replace(/\?.*/,'') + '?' + l.join('&'));
+  });
+  nextmep();
+}
+
+$(function () {
+  $('#country_selector,#group_selector').on('change', reduce_meps);
+  $('#mep_selector').autocomplete({
+    source: ['asdf', 'aaa', 'bbb']
+  });
+});
