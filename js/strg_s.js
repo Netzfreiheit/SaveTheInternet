@@ -131,9 +131,11 @@ function reduce_meps() {
   var s, l = [];
   if (s = $('#country_selector').val()) {
     l.push('country=' + s);
+    log_activity('select_country', s);
   }
   if (s = $('#group_selector').val()) {
     l.push('group=' + s);
+    log_activity('select_group', s);
   }
   load_meps('?' + l.join('&'));
   $('#mep_selector').val('');
@@ -153,6 +155,7 @@ function refine_autocomplete () {
 
 function select_one_mep(event, ui) {
   load_meps('?id=' + ui.item.id);
+  log_activity('select_mep', ui.item.name);
 }
 
 function load_meps (get_params) {
@@ -162,10 +165,35 @@ function load_meps (get_params) {
   nextmep();
 }
 
+function log_activity (action, value) {
+  var url = "https://faxjh.savetheinternet.eu/log/?action=" + action; 
+  if (value) {
+    url += '&value=' + value;
+  }
+  jQuery.ajax(url);
+}
+
 $(function () {
+  log_activity('load', document.URL);
   $('#country_selector,#group_selector').on('change', reduce_meps);
   $('#mep_selector').autocomplete({
     source: current_autocomplete_meps
     , select: select_one_mep
   });
+  $('#share a,#sharebox a').on('click', function () {
+    var type;
+    if ($(this).attr('href').indexOf('twitter.com') != -1) {
+      type = 'twitter';
+    }
+    else if ($(this).attr('href').indexOf('facebook.com') != -1) {
+      type = 'facebook';
+    }
+    else if ($(this).attr('href').indexOf('plus.google.com') != -1) {
+      type = 'google';
+    }
+    log_activity('socialmedia_share', type);
+  })
 });
+
+
+
