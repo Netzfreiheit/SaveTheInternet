@@ -605,3 +605,9 @@ footer {
 		display:none;
 	}
 }
+
+ul.ui-autocomplete {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+}
