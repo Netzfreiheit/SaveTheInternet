@@ -185,6 +185,8 @@ $(function () {
   $('#mep_selector').autocomplete({
     source: current_autocomplete_meps
     , select: select_one_mep
+  }).focus(function(){     
+    $('#mep_selector').autocomplete('search', $(this).val() || ' ');
   });
   $('#share a,#sharebox a').on('click', function () {
     var type;
