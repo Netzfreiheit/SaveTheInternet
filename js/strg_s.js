@@ -171,6 +171,12 @@ function log_activity (action, value) {
     url += '&value=' + value;
   }
   jQuery.ajax(url);
+  if (typeof _paq !== 'undefined' && _paq.push) {
+    _paq.push(['trackEvent', action, value]);
+    if (action === 'socialmedia_share') {
+      _paq.push(['trackGoal', 3, value]);
+    }
+  }
 }
 
 $(function () {
