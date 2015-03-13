@@ -122,3 +122,7 @@ $(function () {
     console.error('error in countdown', e);
   }
 })
+
+$( "(.aufklapp)" ).click(function() {
+  $( "(.aufklapper)" ).slideToggle( "slow" );
+});
