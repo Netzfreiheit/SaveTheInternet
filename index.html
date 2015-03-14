@@ -1,286 +1,127 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-	<title>Save the Internet</title>
-	<meta property="og:title" content="Save the Internet" />
-	<meta property="og:description" content="Net neutrality is under attack in the EU! Contact your Council representative now and tell them to save the internet and to pass strong net neutrality regulations." />
-	<meta property="og:image" content="https://savetheinternet.eu/img/FB_meta.jpg" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/savetheinternet.css">
-	<link rel="icon" type="image/png" href="img/favicon.png">
-	<script type="text/javascript" src="js/savetheinternet.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			configureHeaderHeight();
-		});
+	<title>Save the Internet - contact your representative today!</title>
+	<link rel="stylesheet" href="/js/jquery-ui-1.11.3.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/save.css">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" charset="utf-8">
+	<meta name="description" content="Save the Internet in Europe">
+	<link rel="icon" href="/img/favicon.png" type="image/png">
+	<meta name="author" content="Initiative für Netzfreiheit, European Digital Rights">
+	<meta name="keywords" content="net neutrality, connected conntinent, digital single market, dsm, neelie kroes, Netzneutralität, drosselkom, specialised services, echtesnetz, BEREC, Internetneutralität, Plattformneutralität, Neutralitätsdebatte">
+	<script type="text/javascript" src="/js/jquery-latest.js"></script>
+ 	<script type="text/javascript" src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/js/strg_s.js"></script>
+	<script type="text/javascript" src="/js/share.json"></script>
+
+	<script>
+	$(function () {
+	  if (typeof window.shares === 'undefined') {
+		window.shares = {'twitter': 3193 , 'facebook': 5054 , 'linkedin': 18 , 'google': 598 , 'delicious': 0 , 'stumble': 5};
+	  }
+	  $('#tw_counter').html(window.shares['twitter'] );
+	  $('#fb_counter').html(window.shares['facebook']);
+	  $('#gp_counter').html(window.shares['google']);
+	})
 	</script>
+	
 </head>
+
+
 <body>
-	<div id="nav-wrap">
-		<nav id="nav-content">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="takeaction.html" class="prime-red-color">Take Action</a></li>
-				<li><a href="thefacts.html">The Facts</a></li>
-				<li><a href="weshouldcare.html">Why We Should Care</a></li>
-				<li><a href="index.html#contact">Contact Us</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div id="content-wrap">
-		<div id="home-header-wrap">
-			<div id="social-media-links">
-				<section id="share">
-					<ul class="unstyle">
-						<li id="tw_count_bg">
-							<a href="https://twitter.com/intent/tweet?text=Take%20action%20now%20to%20%23Savetheinternet!%20tell%20your%20EU%20Council%20representative%20to%20enshrine%20%23NetNeutrality%20into%20EU%20law:&url=https://www.savetheinternet.eu/" onclick="javascript:loadShareWindow(this.href); return false;">
-								<span class="smcounter" id="tw_counter">1980</span>
-							</a>
-						<li id="fb_count_bg">
-							<a href="http://www.facebook.com/share.php?u=https://www.savetheinternet.eu/" onclick="javascript:loadShareWindow(this.href); return false;">
-								<span class="smcounter" id="fb_counter">7097</span>
-							</a>
-						<li id="gp_count_bg">
-							<a href="https://plus.google.com/share?url=https://www.savetheinternet.eu/" onclick="javascript:loadShareWindow(this.href); return false;">
-								<span class="smcounter" id="gp_counter">866</span>
-							</a>
-					</ul>
-				</section>
-			</div>
-			<div id="home-header-valign-wrap">
-				<header id="home-header-content">
-					<img src="img/wifi.png" alt="Save the Internet!">
-					<p class="heading2">
-						Tell the EU Member States 
-					</p>
-					<h1 class="heading3">
-						"Don't turn your backs on Net Neutrality!"
-					</h1>
-					<div id="home-header-wrapped-content">
-						<p class="para2">
-							The Council of European Union, under the Italian Presidency, is currently finalising its position on net neutrality. <br>
-							<br>
-							We must urge all EU Member States to stand up for the open internet and adopt the Telecoms Single Market Regulation. <span class="bold">Help us save the internet by sending an email to your representative in the Council of the EU</span>.
-						</p>
-					</div>
-				</header>
-				<section id="home-form-wrap">
-					<form id="home-form" method="get" action="takeaction.html">
-						<div class="field-wrap field-margin-rb">
-							<div class="field-icon">
-								<img src="img/profile_icon.png" alt="Profile Icon">
-							</div>
-							<input id="firstName" type="text" name="first-name" value="First name" onfocus="if($('#'+this.id).val()==='First name'){$('#'+id).val('');$('#'+id).prop('type','text');}" onblur="if($('#'+this.id).val()===''){$('#'+id).val('First name');$('#'+id).prop('type','text');}">
-						</div>
-						<div class="field-wrap field-margin-b">
-							<div class="field-icon">
-								<img src="img/profile_icon.png" alt="Profile Icon">
-							</div>
-							<input id="lastName" type="text" name="last-name" value="Last name" onfocus="if($('#'+this.id).val()==='Last name'){$('#'+id).val('');$('#'+id).prop('type','text');}" onblur="if($('#'+this.id).val()===''){$('#'+id).val('Last name');$('#'+id).prop('type','text');}">
-						</div>
-						<div class="field-wrap field-margin-rb field-margin-super-b">
-							<div class="field-icon">
-								<img src="img/email_icon.png" alt="Email Icon">
-							</div>
-							<input id="email" type="text" name="email" value="E-mail" onfocus="if($('#'+this.id).val()==='E-mail'){$('#'+id).val('');$('#'+id).prop('type','text');}" onblur="if($('#'+this.id).val()===''){$('#'+id).val('E-mail');$('#'+id).prop('type','text');}">
-						</div>
-						<div class="field-wrap field-margin-super-b">
-							<div class="field-icon">
-								<img src="img/pin_icon.png" alt="Location Icon">
-							</div>
-							<select name="country">
-								<option value="">Country</option>
-								<option value="Austria">Austria</option>
-								<option value="Belgium">Belgium</option>
-								<option value="Bulgaria">Bulgaria</option>
-								<option value="Croatia">Croatia</option>
-								<option value="Cyprus">Cyprus</option>
-								<option value="Czech Republic">Czech Republic</option>
-								<option value="Denmark">Denmark</option>
-								<option value="Estonia">Estonia</option>
-								<option value="Finland">Finland</option>
-								<option value="France">France</option>
-								<option value="Germany">Germany</option>
-								<option value="Greece">Greece</option>
-								<option value="Hungary">Hungary</option>
-								<option value="Ireland">Ireland</option>
-								<option value="Italy">Italy</option>
-								<option value="Latvia">Latvia</option>
-								<option value="Lithuania">Lithuania</option>
-								<option value="Luxembourg">Luxembourg</option>
-								<option value="Malta">Malta</option>
-								<option value="Netherlands">Netherlands</option>
-								<option value="Poland">Poland</option>
-								<option value="Portugal">Portugal</option>
-								<option value="Romania">Romania</option>
-								<option value="Slovakia">Slovakia</option>
-								<option value="Slovenia">Slovenia</option>
-								<option value="Spain">Spain</option>
-								<option value="Sweden">Sweden</option>
-								<option value="United Kingdom">United Kingdom</option>
-								<option value="Outside the EU">Outside the EU</option>
-							</select>
-						</div>
-						<input class="form-submit-button" type="submit" value="Send E-mail">
-					</form>
-				</section>
-				<section id="councilListLink">
-					<p class="para9">
-						View a <a class="white-color underline" href="files/Council%20of%20EU%20Contacts.pdf" target="_blank">full list of Council of EU ministers</a>
-					</p>
-				</section>
-			</div>
-		</div>
-		<div id="home-body-wrap">
-			<section class="home-section-wrap light-grey-bg">
-				<div class="home-section-content prime-red-bg">
-					<div class="home-section-title prime-red-bg">
-						<div></div>
-						<h2 class="heading1">What <br>the <br>Internet <br>Needs</h2>
-					</div>
-					<div class="home-section-body white-bg">
-						<p class="para1">
-							<span class="home-point-span1">1.</span> <span class="bold">All data should be treated equally.</span> Enshrining net neutrality is the only way to ensure that the internet will remain an open platform for innovation and a mechanism for the fostering of human rights.
-						</p>
-						<p class="para1">
-							<span class="home-point-span1">2.</span> <span class="bold">Network discrimination must be outlawed:</span> The establishment of a tiered internet must be prevented.
-						</p>
-						<p class="para1">
-							<span class="home-point-span1">3.</span> <span class="bold">No anti competitive agreements:</span> The EU should guarantee an online environment where competition and innovation can thrive. 
-						</p>
-						<p class="para1">
-							<span class="home-point-span1">4.</span> <span class="bold">No censorship:</span> Content decisions are made by a competent judicial authority subject to transparency and public oversight - not corporations, who do not have the capacity to be judge, jury, and police.
-						</p>
-					</div>
-				</div>
-			</section>
-			<section class="home-section-wrap royal-red-bg">
-				<div class="home-section-content royal-red-bg">
-					<div class="home-section-title royal-red-bg">
-						<div></div>
-						<h2 class="heading1">What <br>is Going <br>on in <br>the EU</h2>
-					</div>
-					<div class="home-section-body prime-red-bg">
-						<p class="para2">
-							Last year, thousand of citizens took action to Save the Internet during the fight for net neutrality in the European Parliament. Supported by this campaign, more than 40,000 faxes, thousands of emails, and hundreds of phone calls were made and together, we convinced politicians to defend our fundamental rights online.  
-						</p>
-						<p class="para2">
-							But the fight isn’t over.  Even now, the Council of the European Union is debating about whether they should support the Parliament’s strong call for net neutrality - or open the door to a tiered internet, which would be devastating to the long-term welfare of the telecoms market, competition, innovation, and human rights online.
-						</p>
-						<a href="thefacts.html" class="link1">Continue Reading &#8594;</a>
-					</div>
-				</div>
-			</section>
-			<section class="home-section-wrap light-grey-bg">
-				<div class="home-section-content prime-red-bg">
-					<div class="home-section-title prime-red-bg">
-						<div></div>
-						<h2 class="heading1">Why <br>We <br>Should <br>Care</h2>
-						<a class="link2" href="takeaction.html">Take Part &#8594;</a>
-					</div>
-					<div class="home-section-body white-bg">
-						<div class="care-point">
-							<img src="img/lessformore.png" alt="">
-							<p class="para3 prime-red-color">
-								You Could Pay More for Less Internet Service
-							</p>
-						</div>
-						<div class="care-point">
-							<img src="img/noinovation.png" alt="">
-							<p class="para3">
-								Freedom of Speech Will Be Restricted and Innovation Stifled 
-							</p>
-						</div>
-						<div class="care-point">
-							<img src="img/controlled.png" alt="">
-							<p class="para3">
-								Internet Providers Will Decide What You Can and Can't Do Online
-							</p>
-						</div>
-						<div class="care-point">
-							<img src="img/howitshouldbe.png" alt="">
-							<p class="para3">
-								Network neutrality is the Guiding Principle of the Internet
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-		<section id="sti-sponsors-wrap">
-			<div id="sti-sponsors-content">
-				<div class="sponsor-wrap">
-					<img src="img/spon_access.png" alt="">
-				</div>
-				<div class="sponsor-wrap">
-					<img src="img/spon_reporters_without-borders.png" alt="">
-				</div>
-				<div class="sponsor-wrap">
-					<img src="img/spon_EDRi.png" alt="">
-				</div>
-				<div class="sponsor-wrap">
-					<img src="img/spon_digitale_gesellschaft.png" alt="">
-				</div>
-				<br>
-				<div class="sponsor-wrap">
-					<img src="img/spon_bits_of_freedom.png" alt="">
-				</div>
-				<div class="sponsor-wrap">
-					<img src="img/spon_pi.png" alt="">
-				</div>
-				<div class="sponsor-wrap">
-					<img src="img/spon_go_veto.png" alt="">
-				</div>
-				<div class="sponsor-wrap">
-					<img src="img/spon_initiative_fur_netzfreiheit.png" alt="">
-				</div>
-			</div>
-		</section>
-		<footer id="footer">
-			<div id="footer-content">
-				<div class="footer-section">
-					<h3 class="heading4">
-						Press Inquiries
-					</h3>
-					<p class="para4">
-						Our media team is happy to answer all press 
-						inquiries. Just send us an e-mail under 
-						<a class="bold" href="mailto:press@savetheinternet.eu" target="_blank">press@savetheinternet.eu</a>.<br>
-						<br>
-						Local experts from several european countries 
-						are available for interviews. <br>
-						<br>
-						Picture material can be found <a class="underline" href="files/Savetheinternet.eu%20Media%20Materials.zip" target="_blank">here</a>.
-					</p>
-				</div>
-				<div id="contact" class="footer-section">
-					<h3 class="heading4">
-						Contact Us
-					</h3>
-					<p class="para4">
-						You can reach us at <a class="bold" href="mailto:info@savetheinternet.eu" target="_blank">info@savetheinternet.eu</a>.<br>
-						<br>
-						<span class="bold">Have an idea to improve this website? That's great, we need you!</span> The full source code of this website is available on <a class="underline" href="https://github.com/Netzfreiheit/savetheinternet" target="_blank">github</a> and can be forked, improved, remixed and pushed back to us.<br>
-						<br>
-						One thing we always need is <span class="bold">help with translations</span>. If you speak a language that we haven't covered here so far, please get in contact with us.
-					</p>
-				</div>
-				<div class="footer-section">
-					<h3 class="heading4">
-						Privacy Policy
-					</h3>
-					<p class="para4">
-						We only collect non-personalized information on this website with Piwik, a privacy friendly web analytics software.
-					</p>
-				</div>
-			</div>
-		</footer>
+
+	<noscript>
+		<!-- Piwik Image Tracker -->
+		<img src="https://piwik.netzfreiheit.org/piwik.php?idsite=11&amp;rec=1&amp;action_name=Save+the+Internet" style="border:0" alt="" />
+		<!-- End Piwik -->
+	</noscript>
+
+
+
+<div id=home></div>
+<section id=header>
+	<img src="/img/Logo.png" alt="Save the Internet!" style="width: 82%;_width:805px;max-width:805px;">
+	<div class=teaser>
+		Stay tuned!<br/>
+		We will be back soon. 
+		<br/><br/><br/>
 	</div>
 	
+	</section>
+</section>
+
+<footer>
+	<div class=ninesixty>
+		<p style="text-align:center;">We are concerned citizens from NGOs around Europe that care about civil liberties in the digital realm.</p> 
+		<ul class=footerlogos style="width:100%">
+		<li>
+			<a href="https://netzfreiheit.org/">
+				<img src="/img/ifnf.png" /><br>
+				Initiative für Netzfreiheit (AT)
+			</a>
+		</li>
+		<li>
+			<a href="https://edri.org/">
+				<img src="/img/edri.png" /><br>
+				European Digital Rights (Brussels)
+			</a>
+		</li>
+		<li>
+			<a href="https://www.accessnow.org">
+				<img src="/img/access.png" /><br>
+				Access Now (Brussels)
+			</a>
+		</li>
+		<li>
+			<a href="https://digitalegesellschaft.de">
+				<img src="/img/digiges.png" /><br>
+				Digitale Gesellschaft (DE)
+			</a>
+		</li>
+		<li>
+			<a href="https://www.laquadrature.net/">
+				<img src="/img/lqdn.png" /><br>
+				La Quadrature du Net (FR)
+			</a>
+		</li>
+		<li>
+			<a href="https://www.bof.nl/">
+				<img src="/img/bof.png" /><br>
+				Bits of Freedom (NL)
+			</a>
+		</li>
+		<li>
+			<a href="http://en.rsf.org/">
+				<img src="/img/reporters_without_borders.png" /><br>
+				Reporters Without Borders
+			</a>
+		</li>
+		</ul>
+	</div>
+<div class=clr></div>
+</footer>
+
+<!-- Piwik -->
+<script type="text/javascript">
+ var _paq = _paq || [];
+ _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+ _paq.push(["setCookieDomain", "*.savetheinternet.eu"]);
+ _paq.push(["setDomains", ["*.savetheinternet.eu"]]);
+ _paq.push(["setDoNotTrack", true]);
+ _paq.push(["trackPageView"]);
+ _paq.push(["enableLinkTracking"]);
+ (function() {
+   var u=(("https:" == document.location.protocol) ? "https" : "http")
++ "://piwik.netzfreiheit.org/";
+   _paq.push(["setTrackerUrl", u+"piwik.php"]);
+   _paq.push(["setSiteId", "11"]);
+   var d=document, g=d.createElement("script"),
+s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+   g.defer=true; g.async=true; g.src=u+"piwik.js";
+s.parentNode.insertBefore(g,s);
+ })();
+</script>
+ <!-- End Piwik Code -->
+
 </body>
 </html>
