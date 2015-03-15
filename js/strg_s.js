@@ -185,7 +185,7 @@ $(function () {
   $('#mep_selector').autocomplete({
     source: current_autocomplete_meps
     , select: select_one_mep
-  }).focus(function(){     
+  }).focus(function(){
     $('#mep_selector').autocomplete('search', $(this).val() || ' ');
   });
   $('#share a,#sharebox a').on('click', function () {
@@ -201,7 +201,13 @@ $(function () {
     }
     log_activity('socialmedia_share', type);
   })
+
+  $('#toggle_when,#toggle_how').on('click', function () {
+    $('div.toggled_container', $(this).parent()).slideToggle("slow");
+  });
+
 });
+
 
 
 
