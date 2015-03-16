@@ -166,11 +166,6 @@ function load_meps (get_params) {
 }
 
 function log_activity (action, value) {
-  var url = "https://faxjh.savetheinternet.eu/log/?action=" + action; 
-  if (value) {
-    url += '&value=' + value;
-  }
-  jQuery.ajax(url);
   if (typeof _paq !== 'undefined' && _paq.push) {
     _paq.push(['trackEvent', action, value]);
     if (action === 'socialmedia_share') {
@@ -180,7 +175,6 @@ function log_activity (action, value) {
 }
 
 $(function () {
-  log_activity('load', document.URL);
   $('#country_selector,#group_selector').on('change', reduce_meps);
   $('#mep_selector').autocomplete({
     source: current_autocomplete_meps
