@@ -379,6 +379,10 @@ h5:before, h5:after {
 
 /* dividers */
 
+.divbottomred {
+	margin-bottom: 30px;
+}
+
 .divbottomred,.divbottomwhite,.divtopwhite  {
 	position:relative;
 }
@@ -609,4 +613,15 @@ ul.ui-autocomplete {
     list-style: none;
     list-style-type: none;
     text-decoration: none;
+}
+
+div.toggled_container {
+	display: none;
+}
+
+a.button {
+	border-color: red;
+	border-width: 2px;
+	padding: 5px;
+	border: 3px;
 }
