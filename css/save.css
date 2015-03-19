@@ -52,7 +52,7 @@ h3 {
 	margin: 0;
 	text-align: center;
 	position:relative;
-	
+
 }
 
 h3:after {
@@ -570,13 +570,13 @@ footer {
 	#mainnav > ul > li > a {
 		padding: 20px 8px;
 	}
-	
+
 	.whyblock {
 		width: 95%;
 		margin: 0 2.5%;
 		float: none;
 	}
-	
+
 	#langnav {
 		margin-right:10px;
 	}
@@ -584,7 +584,7 @@ footer {
 		position: relative;
 		margin-left: 40px;
 	}
-	
+
 	#bannerbox {
 		text-align:center;
 	}
@@ -620,8 +620,18 @@ div.toggled_container {
 }
 
 a.button {
-	border-color: red;
-	border-width: 2px;
 	padding: 5px;
-	border: 3px;
+	border: 3px red;
+}
+
+/* Hidden for everything except screen-readers (stolen from Bootstrap) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0px, 0px, 0px, 0px);
+  border: 0 none;
 }
