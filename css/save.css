@@ -25,7 +25,7 @@ body {
 	font-size: 16px;
 	line-height: 1.2em;
 	background:#fff;
-	color: #666;
+	color: #3C3C3C;
 }
 
 .countdown {
@@ -39,26 +39,28 @@ a {
 
 h2 {
 	font: 36px/40px Montserrat-Bold;
-	border-bottom: 1px solid #fff;
-	padding:4px 0;
-	margin: 30px 0 10px;
+/*	border-bottom: 1px solid #fff; */
+	padding: 90px 0 10px;
+	margin: -40px 0 10px;
 	text-transform:uppercase;
 	text-align:center;
 }
 
 h3 {
-	font: 36px/40px Montserrat-Bold;
-	padding:20px 0;
-	margin: 0;
-	text-align: center;
-	position:relative;
-
+  font: 36px/40px Montserrat-Bold;
+  padding: 20px 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  margin-top: -50px;
+  padding-top: 80px;
+  text-transform: uppercase;
 }
 
 h3:after {
 	content: "";
 	width: 200px;
-	border-bottom: 4px solid #eb1c23;
+	border-bottom: 4px solid #1a1a1a;
 	height: 5px;
 	position: absolute;
 	left: 50%;
@@ -120,7 +122,7 @@ td > a {
 }
 
 .alertbox h3:after {
-	border-bottom: 4px solid #fff;
+	border-bottom: 1px solid #fff;
 }
 
 
@@ -216,24 +218,36 @@ td > a {
 
 #header {
 	text-align:center;
-	color: #fff;
+	color: #000;
 	padding: 150px 0 0;
-	background: #eb1c23 url(../img/Homepage-Background.png) center center no-repeat;
+	background: #FAB53D url(../img/Homepage-Background.png) center center no-repeat;
+}
+
+.subheadline {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0;
+	font: 21px/1.2em Montserrat-regular;
+	letter-spacing: 3px;
 }
 
 .teaser {
 	margin: 30px;
-	font: 21px/1.2em SourceSansPro-Regular;
+	font: 21px/1.2em Montserrat-regular;
 	text-align:center;
 }
 
 #takeactionbt {
-	background: #fff;
+	background: #1a1a1a;
+	color: #FFF;	
+	position: relative;
+	z-index: 3;
 }
 
 
 .alertbox {
-	background: #eb1c23;
+	background: #1a1a1a;
 	color: #fff;
 	font: 18px/1.2em SourceSansPro-Regular;
 }
@@ -279,8 +293,8 @@ td > a {
 }
 
 .description {
-	color: #57585b;
-	font: 16px/1.2em SourceSansPro-Regular, sans-serif;
+	color: #252527;
+	font: 18px/1.2em SourceSansPro-Regular, sans-serif;
 }
 
 #regulation, #howto {
@@ -316,14 +330,13 @@ td > a {
 }
 
 .actbox {
-	background: #fff;
-	margin-top:10px;
-	color: #eb1c23;
-	position:relative;
+  color: #333333;
+  position: relative;
+  margin-top: -250px;
+  padding-top: 250px;
 }
 
 .actboxitem {
-	margin: 0 0 0 158px;
 	padding: 0 0 20px;
 }
 
@@ -365,6 +378,8 @@ td > a {
 h4 {
 	font: 24px/1.2em SourceSansPro-Regular;
 	text-align: center;
+    z-index: 1;
+    position: relative;
 }
 
 h5 {
@@ -395,7 +410,7 @@ h5:before, h5:after {
 	position: absolute;
 	border-style: solid;
 	border-width: 40px 40px 0;
-	border-color: #eb1c23 transparent;
+	border-color: #1a1a1a transparent;
 	display: block;
 	width: 0;
 	z-index: 1;
@@ -405,7 +420,7 @@ h5:before, h5:after {
 }
 
 .divbottomred:after {
-	border-color: #eb1c23 transparent;
+	border-color: #1a1a1a transparent;
 }
 
 .divbottomwhite:after {
@@ -433,9 +448,10 @@ h5:before, h5:after {
 	width:100%;
 	background: #fff;
 	font: 14px/1.2em Montserrat-Bold;
-	color: #808184;
+	color: #222;
 	z-index: 10;
 	box-shadow: rgba(0,0,0,.05) 0 5px;
+	text-transform: uppercase;
 }
 
 #mainnav > ul > li {
@@ -449,8 +465,8 @@ h5:before, h5:after {
 	text-decoration:none;
 }
 #mainnav > ul > li > a:hover {
-	padding-bottom: 10px;
-	border-bottom: #eb1c23 10px solid;
+	padding-bottom: 15px;
+	border-bottom: #EDAB39 5px solid;
 }
 
 
@@ -521,9 +537,97 @@ h5:before, h5:after {
 	background: url(../img/GooglePlus-Count.png) no-repeat;
 }
 
+.actBt {
+	text-decoration: none;
+}
+
+.actItem {
+	display: inline-block;
+	width:26%;
+	padding: 2%;
+	text-decoration:none;
+}
+
+.actIcon {
+	width:56px;
+	height:56px;
+	vertical-align:middle;
+}
+
+.actText {
+	display:inline-block;
+	vertical-align:middle;
+	font: 3em/1.2em Montserrat-regular;
+	text-transform: uppercase;
+	margin-left: .3em;
+
+}
+
+.actItem:hover > .actText {
+	text-decoration: underline;
+}
+
+.actList {
+	margin:0;
+	padding:0;
+	font-size: 0.8em;
+	position:relative;
+	z-index: 2;
+}
+
+.actList > .actItem {
+  background: #1A1A1A;
+  color: #FFFFFF;
+  width: 26%;
+  margin: 0 1% 0 0;
+  padding: 2% 3.33%;
+  text-align: center;
+}
+
+.actList > .actItem:last-child {
+  margin: 0;
+}
+
+.actArea {
+  background: #FAB53D;
+  padding: 1%;
+}
 
 
+.mepFilter {
+  padding: .6em 0;
+  position:relative;
+  z-index: 2;
+}
+.mepFilter > select, .mepFilter > input {
+  font-size: 1em;
+  padding: .3%;
+  max-width: 100%;
+  margin: .5%;
+}
+#country_selector, #mep_selector {
+  width: 22.5%;
+}
+#group_selector {
+  width: 50%;
+}
 
+ul#ui-id-1 {
+  z-index: 3;
+  max-width: 300px;
+  margin:0;
+  padding:.3em;
+}
+.ui-menu-item {
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+
+.ask {
+	font-weight: bold;
+	font-size: 1.1em;
+}
 
 
 
@@ -560,6 +664,30 @@ footer {
 	float:right;
 	margin-bottom: 20px;
 }
+
+
+.contactNow {
+	padding: 0;
+	margin: 1.5em 0 .8em;
+}
+
+
+.choose {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.choose > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width:33.33%; 
+  float:left;
+  font-size: 2em;
+  
+}
+
 
 @media screen and (max-width: 770px){
 
@@ -623,6 +751,8 @@ a.button {
 	padding: 5px;
 	border: 3px red;
 }
+
+
 
 /* Hidden for everything except screen-readers (stolen from Bootstrap) */
 .sr-only {

@@ -9,21 +9,7 @@
 	<link rel="icon" href="/img/favicon.png" type="image/png">
 	<meta name="author" content="Initiative für Netzfreiheit, European Digital Rights">
 	<meta name="keywords" content="net neutrality, connected conntinent, digital single market, dsm, neelie kroes, Netzneutralität, drosselkom, specialised services, echtesnetz, BEREC, Internetneutralität, Plattformneutralität, Neutralitätsdebatte">
-	<script type="text/javascript" src="/js/jquery-latest.js"></script>
-	<script type="text/javascript" src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="/js/strg_s.js"></script>
-	<script type="text/javascript" src="/js/share.json"></script>
 
-	<script>
-	$(function () {
-		if (typeof window.shares === 'undefined') {
-		window.shares = {'twitter': 4600 , 'facebook': 7089 , 'linkedin': 0 , 'google': 402 , 'delicious': 0 , 'stumble': 6};
-		}
-		$('#tw_counter').html(window.shares['twitter'] );
-		$('#fb_counter').html(window.shares['facebook']);
-		$('#gp_counter').html(window.shares['google']);
-	})
-	</script>
 
 </head>
 
@@ -46,10 +32,10 @@
 		</div>
 		<div id="mainnav">
 			<ul class="unstyle">
-				<li><a href="#Why">Why</a></li>
-				<li><a href="#What">What</a></li>
-				<li><a href="#When">When</a></li>
-				<li><a href="#How">How</a></li>
+				<li><a href="#why">Why</a></li>
+				<li><a href="#what">What</a></li>
+				<li><a href="#when">When</a></li>
+				<li><a href="#how">How</a></li>
 				<li><a href="#act">Take Action</a></li>
 			</ul>
 		</div>
@@ -68,6 +54,9 @@
 <div id="home"></div>
 <section id="header">
 	<img src="/img/Logo.png" alt="Save the Internet!" style="width: 82%;_width:805px;max-width:805px;">
+	<h1 class="subheadline">
+		Defend net neutrality in Europe
+	</h1>
 	<div class="teaser">
 		Your freedom online is threatened by an EU proposal.<br />
 		The fight for the open internet is happening right now in Brussels.
@@ -75,20 +64,32 @@
 	<div class="countdown"><a style="text-decoration: none;" href="http://twitter.com/home?status=Help%20save%20the%20internet.%20Tell%20your%20politician%20to%20safeguard%20net%20neutrality.%20http://www.savetheinternet.eu/%20%23ConnectedContinent%20#SaveTheInternetEU" title="Tweet this!"></a></div>
 	<section class="ninesixty">
 		<a href="#act" class="unstyle">
-			<h2>Take action!</h2>
-			<div id="takeactionbt"><img src="/img/Take-Action-Button.png" style="width:100%;max-width:960px;_width:960;"></div>
+			<h2 class="contactNow">Contact your MEP now!</h2>
+			<div id="takeactionbt">
+				<a class="actBt" href="#act">
+					<div class="actItem" id="goTwitter">
+						<img class="actIcon" src="img/iconTwitter.png">
+						<div class="actText">Tweet</div>
+					</div>
+					<div class="actItem" id="goFax">
+						<img class="actIcon" src="img/iconFax.png">
+						<div class="actText">FAX</div>
+					</div>
+					<div class="actItem" id="goEmail">
+						<img class="actIcon" src="img/iconEmail.png">
+						<div class="actText">EMail</div>
+					</div>
+				</a>
+		<div class="ask">Ask your European parliamentarians to defend their decision from 2014 to save the internet!</div>
+			</div>
 		</a>
 	</section>
 </section>
 
 <section id="goals" class="divbottomwhite">
 	<div class="ninesixty alertbox divbottomred">
-		<h3>Defend net neutrality in Europe</h3>
-		<ul class="unstyle" id="goalslist">
-			<li><span class="ovhid">Ask your European parliamentarians to defend their decision from 2014 to save the internet!</span></li>
-		</ul>
 
-		<h3 id="Why">Why is it important?</h3>
+		<h3 id="why">Why is it important?</h3>
 		<div class="whyblocks">
 			<div class="whyblock">
 				<div class="whyimg"><img src="/img/goal1.png"></div>
@@ -111,7 +112,8 @@
 
 	</div>
 
-	<div id="What" class="sixforty" style="margin-top:50px;">
+	<div id="what" class="sixforty" style="margin-top:50px;">
+		<h3>What is happening?</h3>
 		<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/fpbOEoRrHyU?rel=0" frameborder="0" allowfullscreen></iframe>
 		<div class="description">
 		<p>
@@ -136,88 +138,103 @@
 <section id="act" class="divbottomred">
 	<div class="alertbox">
 		<div class="ninesixty">
+			<div class=clr></div>
 			<h2>Take action now!</h2>
+
 			<p class="teaser">
 				Contact your Member of the European Parliament to defend<br />
 				his/her strong position for net neutrality in Europe!
 			</p>
-			<div class="divline"></div>
-
-			<label for="country_selector" class="sr-only">Country</label>
-			<select id="country_selector">
-				<option value="">Country</option>
-				<option value="at">Austria</option>
-				<option value="be">Belgium</option>
-				<option value="bg">Bulgaria</option>
-				<option value="hr">Croatia</option>
-				<option value="cy">Cyprus</option>
-				<option value="cz">Czech Republic</option>
-				<option value="dk">Denmark</option>
-				<option value="ee">Estonia</option>
-				<option value="fi">Finland</option>
-				<option value="fr">France</option>
-				<option value="de">Germany</option>
-				<option value="gr">Greece</option>
-				<option value="hu">Hungary</option>
-				<option value="it">Italy</option>
-				<option value="ie">Ireland</option>
-				<option value="lv">Latvia</option>
-				<option value="lt">Lithuania</option>
-				<option value="lu">Luxembourg</option>
-				<option value="mt">Malta</option>
-				<option value="nl">Netherlands</option>
-				<option value="pl">Poland</option>
-				<option value="pt">Portugal</option>
-				<option value="ro">Romania</option>
-				<option value="sk">Slovakia</option>
-				<option value="si">Slovenia</option>
-				<option value="es">Spain</option>
-				<option value="se">Sweden</option>
-				<option value="gb">United Kingdom</option>
-			</select>
-
-			<label for="group_selector" class="sr-only">Political Group</label>
-			<select id="group_selector">
-				<option value="">Political Group</option>
-				<option value="epp">EPP: European People's Party</option>
-				<option value="sd">S&amp;D: Socialists and Democrats</option>
-				<option value="ecr">ECR: European Conservatives and Reformists</option>
-				<option value="aldeadle">ALDE: Alliance of Liberals and Democrats</option>
-				<option value="guengl">GUE: European United Left</option>
-				<option value="greensefa">Greens: Greens/European Free Alliance</option>
-				<option value="ni">NI: Non-attached Members</option>
-				<option value="efd">EFD: Europe of Freedom and Direct Democracy Group</option>
-			</select>
-
-			<label for="mep_selector" class="sr-only">Lookup one MEP</label>
-			<input id="mep_selector" placeholder="Lookup one MEP" size="30">
-
-			<div class="actbox" id="actboxfax">
-				<img class="callimg" src="/img/Fax-MEPs.png" alt="Fax your MEPs! Demand the enforcement of a true and unconditional Net neutrality!">
-				<div id="faxiframe" class="actboxitem">
-					<object data="https://faxjh.savetheinternet.eu/sti/fax/" width="630" height="355"></object>
+			
+			<div class="actArea">
+				<div class="actList">
+					<a href="#actBoxTweet" class="actItem" id="chooseTweet">
+						<img class="actIcon" src="img/iconTwitter.png">
+						<div class="actText">Tweet</div>
+					</a><a href="#actBoxFax" class="actItem" id="chooseFax">
+						<img class="actIcon" src="img/iconFax.png">
+						<div class="actText">FAX</div>
+					</a><a href="#actBoxMail" class="actItem" id="chooseMail">
+						<img class="actIcon" src="img/iconEmail.png">
+						<div class="actText">EMail</div>
+					</a>
 				</div>
-				<a onclick="nextmep()" class="nextmep">Get another MEP</a>
-			</div>
-			<div class="actbox" id="actboxphone">
-				<img class="callimg" src="/img/Call-MEPs.png" alt="Tweet MEPs! Demand the enforcement of a true and unconditional Net neutrality!">
-				<div class="actboxitem">
-					<div id="tweetiframe">
-						<object data="https://faxjh.savetheinternet.eu/sti/tweet/" width="630" height="335"></object>
+				<div class="mepFilter">
+					<label for="country_selector" class="sr-only">Country</label>
+					<select id="country_selector">
+						<option value="">Country</option>
+						<option value="at">Austria</option>
+						<option value="be">Belgium</option>
+						<option value="bg">Bulgaria</option>
+						<option value="hr">Croatia</option>
+						<option value="cy">Cyprus</option>
+						<option value="cz">Czech Republic</option>
+						<option value="dk">Denmark</option>
+						<option value="ee">Estonia</option>
+						<option value="fi">Finland</option>
+						<option value="fr">France</option>
+						<option value="de">Germany</option>
+						<option value="gr">Greece</option>
+						<option value="hu">Hungary</option>
+						<option value="it">Italy</option>
+						<option value="ie">Ireland</option>
+						<option value="lv">Latvia</option>
+						<option value="lt">Lithuania</option>
+						<option value="lu">Luxembourg</option>
+						<option value="mt">Malta</option>
+						<option value="nl">Netherlands</option>
+						<option value="pl">Poland</option>
+						<option value="pt">Portugal</option>
+						<option value="ro">Romania</option>
+						<option value="sk">Slovakia</option>
+						<option value="si">Slovenia</option>
+						<option value="es">Spain</option>
+						<option value="se">Sweden</option>
+						<option value="gb">United Kingdom</option>
+					</select>
+
+					<label for="group_selector" class="sr-only">Political Group</label>
+					<select id="group_selector">
+						<option value="">Political Group</option>
+						<option value="epp">EPP: European People's Party</option>
+						<option value="sd">S&amp;D: Socialists and Democrats</option>
+						<option value="ecr">ECR: European Conservatives and Reformists</option>
+						<option value="aldeadle">ALDE: Alliance of Liberals and Democrats</option>
+						<option value="guengl">GUE: European United Left</option>
+						<option value="greensefa">Greens: Greens/European Free Alliance</option>
+						<option value="ni">NI: Non-attached Members</option>
+						<option value="efd">EFD: Europe of Freedom and Direct Democracy Group</option>
+					</select>
+					<label for="mep_selector" class="sr-only">Lookup one MEP</label>
+					<input id="mep_selector" placeholder="Lookup one MEP" size="30">
+				</div>
+				
+				<div class="actbox" id="actBoxFax">
+					<p>Fax your MEPs! Demand the enforcement of a true and unconditional Net neutrality!</p>
+					<div id="faxiframe" class="actboxitem">
+						<object data="https://faxjh.savetheinternet.eu/sti/fax/" width="630" height="355"></object>
 					</div>
+					<a onclick="nextmep()" class="nextmep">Get another MEP</a>
 				</div>
-				<a onclick="nextmep()" class="nextmep">Get another MEP</a>
-			</div>
-
-			<div class="actbox" id="actboxmail">
-				<img class="callimg" src="/img/E-Mail-MEPs.png" alt="E-Mail MEPs! Demand the enforcement of a true and unconditional Net neutrality!">
-				<div id="mailiframe" class="actboxitem">
-					<object data="https://faxjh.savetheinternet.eu/sti/mail/" width="630" height="390"></object>
+				<div class="actbox" id="actBoxTweet">
+					<p>Tweet MEPs! Demand the enforcement of a true and unconditional Net neutrality!</p>
+					<div class="actboxitem">
+						<div id="tweetiframe">
+							<object data="https://faxjh.savetheinternet.eu/sti/tweet/" width="630" height="335"></object>
+						</div>
+					</div>
+					<a onclick="nextmep()" class="nextmep">Get another MEP</a>
 				</div>
-				<a onclick="nextmep()" class="nextmep">Get another MEP</a>
-			</div>
-			<div class="clr"></div>
 
+				<div class="actbox" id="actBoxMail">
+					<p>E-Mail MEPs! Demand the enforcement of a true and unconditional Net neutrality!</p>
+					<div id="mailiframe" class="actboxitem">
+						<object data="https://faxjh.savetheinternet.eu/sti/mail/" width="630" height="390"></object>
+					</div>
+					<a onclick="nextmep()" class="nextmep">Get another MEP</a>
+				</div>
+				<div class="clr"></div>
+			</div>
 			<h2>Spread the word!</h2>
 			<div id="sharebox">
 				<a href="http://twitter.com/home?status=Help%20save%20the%20internet.%20Tell%20your%20politician%20to%20safeguard%20net%20neutrality.%20http://www.savetheinternet.eu/%20%23ConnectedContinent%20#SaveTheInternetEU"><img src="/img/Twitter.png"></a>
@@ -229,7 +246,7 @@
 	</div>
 </section>
 
-<section id="When">
+<section id="when">
 	<div class="sixforty">
 		<a href="javascript:void(0)" id="toggle_when"><h4>Click here to see our</h4></a>
 		<h3>TIMELINE TO SAVE THE INTERNET</h3>
@@ -255,7 +272,7 @@
 	</div>
  </section>
 
-<section id="How">
+<section id="how">
 	<div class="sixforty">
 		<a href="javascript:void(0)" id="toggle_how"><h4>Click here to see our</h4></a>
 		<h3>How to Contact Your MEP</h3>
@@ -406,6 +423,45 @@
 	</div>
 <div class="clr"></div>
 </footer>
+
+
+	<script type="text/javascript" src="/js/jquery-latest.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/js/strg_s.js"></script>
+	<script type="text/javascript" src="/js/share.json"></script>
+
+	<script>
+	$(function () {
+		if (typeof window.shares === 'undefined') {
+		window.shares = {'twitter': 4600 , 'facebook': 7089 , 'linkedin': 0 , 'google': 402 , 'delicious': 0 , 'stumble': 6};
+		}
+		$('#tw_counter').html(window.shares['twitter'] );
+		$('#fb_counter').html(window.shares['facebook']);
+		$('#gp_counter').html(window.shares['google']);
+	});
+	
+
+
+	
+	/* smooth scrolling */
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 800);
+			return false;
+		  }
+		}
+	  });
+	});
+	
+	
+	</script>
+
 
 <!-- Piwik -->
 <script type="text/javascript">

@@ -203,5 +203,16 @@ $(function () {
 });
 
 
-
+/* switch between contact methodes */
+$('.actbox').css({'display': 'none'});
+$('#actBoxFax').css({'display': 'block'});
+$('#chooseFax').addClass("current");
+$(".actItem").click(function(event) {
+	event.preventDefault();
+	$(this).addClass("current");
+	$(this).siblings().removeClass("current");
+	var tab = $(this).attr("href");
+	$(".actbox").not(tab).css("display", "none");
+	$(tab).fadeIn();
+});
 
