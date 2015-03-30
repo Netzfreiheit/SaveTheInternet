@@ -175,11 +175,11 @@ function log_activity (action, value) {
 }
 
 function mail_subscribe() {
-  var v, url = "https://faxjh.savetheinternet.eu/subscribe/?email=" + $('#newsletter-email').val(); 
+  var v, url = "https://faxjh.savetheinternet.eu/sti/subscribe/?mail=" + $('#newsletter-email').val();
   if (v=$('#newsletter_country').val()) {
     url += '&country=' + v;
   }
-  jQuery.ajax(url);
+  jQuery.ajax(url, {'async': false});
 }
 
 $(function () {
