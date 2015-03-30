@@ -47,7 +47,7 @@ $(function () {
          var mail = $(el).attr('locip') + '@' + host;
        $(el).html('<a href="mailto:' + mail + '">' + ($(el).attr('inner') || mail || el.innerText || 'mail') + '</a>');
      } else {
-       $(el).html(el.innerText.replace(/^(\w+\.\w+) \\at\\ (okfn.at)/, '<a href="mailto:$1@$2">$1@$2</a>'));
+       $(el).html(el.innerText.replace(/^(\w+\.\w+) \\at\\ (savetheinternet.eu)/, '<a href="mailto:$1@$2">$1@$2</a>'));
      }
   });
 });
@@ -174,6 +174,14 @@ function log_activity (action, value) {
   }
 }
 
+function mail_subscribe() {
+  var v, url = "https://faxjh.savetheinternet.eu/sti/subscribe/?mail=" + $('#newsletter-email').val();
+  if (v=$('#newsletter_country').val()) {
+    url += '&country=' + v;
+  }
+  jQuery.ajax(url, {'async': false});
+}
+
 $(function () {
   $('#country_selector,#group_selector').on('change', reduce_meps);
   $('#mep_selector').autocomplete({
@@ -200,6 +208,7 @@ $(function () {
     $('div.toggled_container', $(this).parent()).slideToggle("slow");
   });
 
+  $('#newsletter-submit').on('click', mail_subscribe);
 });
 
 
