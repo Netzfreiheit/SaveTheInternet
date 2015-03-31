@@ -67,13 +67,13 @@
 			<h2 class="contactNow">Contact your MEP now!</h2>
 			<div id="takeactionbt">
 				<a class="actBt" href="#act">
-					<div class="actItem" id="goTweet">
-						<img class="actIcon" src="img/iconTwitter.png">
-						<div class="actText">Tweet</div>
-					</div>
 					<div class="actItem" id="goFax">
 						<img class="actIcon" src="img/iconFax.png">
 						<div class="actText">FAX</div>
+					</div>
+					<div class="actItem" id="goTweet">
+						<img class="actIcon" src="img/iconTwitter.png">
+						<div class="actText">Tweet</div>
 					</div>
 					<div class="actItem" id="goMail">
 						<img class="actIcon" src="img/iconEmail.png">
@@ -150,12 +150,12 @@
 			
 			<div class="actArea">
 				<div class="actList">
-					<a href="#actBoxTweet" class="actItem" id="chooseTweet">
-						<img class="actIcon" src="img/iconTwitter.png">
-						<div class="actText">Tweet</div>
-					</a><a href="#actBoxFax" class="actItem" id="chooseFax">
+					<a href="#actBoxFax" class="actItem" id="chooseFax">
 						<img class="actIcon" src="img/iconFax.png">
 						<div class="actText">FAX</div>
+					</a><a href="#actBoxTweet" class="actItem" id="chooseTweet">
+						<img class="actIcon" src="img/iconTwitter.png">
+						<div class="actText">Tweet</div>
 					</a><a href="#actBoxMail" class="actItem" id="chooseMail">
 						<img class="actIcon" src="img/iconEmail.png">
 						<div class="actText">EMail</div>
@@ -240,45 +240,46 @@
 
 			<div class="clr"></div>
 
-			<h2>Stay informed</h2>
+			<h2>Stay informed!</h2>
 
-
-			<form action="http://mailman.edri.org/mailman/subscribe/savetheinternet/" method="post">
-				<input id="newsletter-email" name="email" placeholder="E-Mail Adresse" type="email">
-				<label for="country_selector" class="sr-only">Country</label>
-				<select id="newsletter_country">
-					<option value="">Country</option>
-					<option value="at">Austria</option>
-					<option value="be">Belgium</option>
-					<option value="bg">Bulgaria</option>
-					<option value="hr">Croatia</option>
-					<option value="cy">Cyprus</option>
-					<option value="cz">Czech Republic</option>
-					<option value="dk">Denmark</option>
-					<option value="ee">Estonia</option>
-					<option value="fi">Finland</option>
-					<option value="fr">France</option>
-					<option value="de">Germany</option>
-					<option value="gr">Greece</option>
-					<option value="hu">Hungary</option>
-					<option value="it">Italy</option>
-					<option value="ie">Ireland</option>
-					<option value="lv">Latvia</option>
-					<option value="lt">Lithuania</option>
-					<option value="lu">Luxembourg</option>
-					<option value="mt">Malta</option>
-					<option value="nl">Netherlands</option>
-					<option value="pl">Poland</option>
-					<option value="pt">Portugal</option>
-					<option value="ro">Romania</option>
-					<option value="sk">Slovakia</option>
-					<option value="si">Slovenia</option>
-					<option value="es">Spain</option>
-					<option value="se">Sweden</option>
-					<option value="gb">United Kingdom</option>
-				</select>
-				<input name="email-button" value="Subscribe" type="Submit" id="newsletter-submit">
-			</form>
+			<div class="newsletter-box">
+				<form action="http://mailman.edri.org/mailman/subscribe/savetheinternet/" method="post">
+					<input id="newsletter-email" name="email" placeholder="E-Mail Adresse" type="email">
+					<label for="country_selector" class="sr-only">Country</label>
+					<select id="newsletter_country">
+						<option value="">Country</option>
+						<option value="at">Austria</option>
+						<option value="be">Belgium</option>
+						<option value="bg">Bulgaria</option>
+						<option value="hr">Croatia</option>
+						<option value="cy">Cyprus</option>
+						<option value="cz">Czech Republic</option>
+						<option value="dk">Denmark</option>
+						<option value="ee">Estonia</option>
+						<option value="fi">Finland</option>
+						<option value="fr">France</option>
+						<option value="de">Germany</option>
+						<option value="gr">Greece</option>
+						<option value="hu">Hungary</option>
+						<option value="it">Italy</option>
+						<option value="ie">Ireland</option>
+						<option value="lv">Latvia</option>
+						<option value="lt">Lithuania</option>
+						<option value="lu">Luxembourg</option>
+						<option value="mt">Malta</option>
+						<option value="nl">Netherlands</option>
+						<option value="pl">Poland</option>
+						<option value="pt">Portugal</option>
+						<option value="ro">Romania</option>
+						<option value="sk">Slovakia</option>
+						<option value="si">Slovenia</option>
+						<option value="es">Spain</option>
+						<option value="se">Sweden</option>
+						<option value="gb">United Kingdom</option>
+					</select>
+					<input name="email-button" value="Subscribe" type="Submit" id="newsletter-submit">
+				</form>
+			</div>
 
 			<h2>Spread the word!</h2>
 			<div id="sharebox">

@@ -601,14 +601,18 @@ h5:before, h5:after {
   padding: 1%;
 }
 
-
-.mepFilter {
+.mepFilter, .newsletter-box {
   padding: .6em 0;
   margin: 0 -.66%;
   position:relative;
   z-index: 2;
 }
-.mepFilter > select, .mepFilter > input {
+
+.newsletter-box {
+	text-align: center;
+}
+
+.mepFilter > select, .mepFilter > input, .newsletter-box select, .newsletter-box input {
   font-size: 1em;
   padding: .3%;
   max-width: 100%;
