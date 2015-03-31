@@ -25,7 +25,7 @@ body {
 	font-size: 16px;
 	line-height: 1.2em;
 	background:#fff;
-	color: #3C3C3C;
+	color: #1A1A1A;
 }
 
 .countdown {
@@ -52,9 +52,17 @@ h3 {
   margin: 0;
   text-align: center;
   position: relative;
+  text-transform: uppercase;
+}
+
+#why {
   margin-top: -50px;
   padding-top: 80px;
-  text-transform: uppercase;
+}
+
+#what {
+  margin-top: -80px;
+  padding-top: 80px;
 }
 
 h3:after {
@@ -479,7 +487,7 @@ h5:before, h5:after {
 #langselect {
 	display:none;
 	position:absolute;
-	border-top: #eb1c23 10px solid;
+	border-top: #EDAB39 10px solid;
 	background: #fff;
 	text-align:center;
 	width: 95px;
@@ -596,6 +604,7 @@ h5:before, h5:after {
 
 .mepFilter {
   padding: .6em 0;
+  margin: 0 -.66%;
   position:relative;
   z-index: 2;
 }
@@ -626,7 +635,8 @@ ul#ui-id-1 {
 
 .ask {
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 1.25em;
+	margin: 1%;
 }
 
 
@@ -731,9 +741,24 @@ footer {
 
 }
 
-@media screen and (max-width: 590px){
-	.hide590 {
-		display:none;
+@media screen and (min-width: 840px){
+	.actItem {
+		white-space: nowrap;
+	}
+}
+@media screen and (max-width: 840px){
+	.actText {
+		display: block;
+		margin: .3em 0;
+		font-size: 2.2em;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.actText {
+		display: block;
+		margin: .3em 0;
+		font-size: 1.8em;
 	}
 }
 

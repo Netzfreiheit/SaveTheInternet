@@ -213,15 +213,28 @@ $(function () {
 
 
 /* switch between contact methodes */
-$('.actbox').css({'display': 'none'});
-$('#actBoxFax').css({'display': 'block'});
+$('.actbox').hide();
+$('#actBoxFax').show();
 $('#chooseFax').addClass("current");
 $(".actItem").click(function(event) {
 	event.preventDefault();
 	$(this).addClass("current");
 	$(this).siblings().removeClass("current");
 	var tab = $(this).attr("href");
-	$(".actbox").not(tab).css("display", "none");
+	$(".actbox").not(tab).hide();
 	$(tab).fadeIn();
+});
+
+$("#goTweet").click(function() {
+	$(".actbox").hide();
+	$("#actBoxTweet").show();
+});
+$("#goFax").click(function() {
+	$(".actbox").hide();
+	$("#actBoxFax").show();
+});
+$("#goMail").click(function() {
+	$(".actbox").hide();
+	$("#actBoxMail").show();
 });
 
