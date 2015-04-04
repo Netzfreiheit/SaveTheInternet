@@ -208,6 +208,14 @@ $(function () {
     $('div.toggled_container', $(this).parent()).slideToggle("slow");
   });
 
+  $('#gotoWhen').on('click', function () {
+    $('#toggleWhen').show();
+  });
+  $('#gotoHow').on('click', function () {
+    $('#toggleHow').show();
+  });
+  
+  
   $('#newsletter-submit').on('click', mail_subscribe);
 });
 

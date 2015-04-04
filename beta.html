@@ -9,8 +9,7 @@
 	<link rel="icon" href="/img/favicon.png" type="image/png">
 	<meta name="author" content="Initiative für Netzfreiheit, European Digital Rights">
 	<meta name="keywords" content="net neutrality, connected conntinent, digital single market, dsm, neelie kroes, Netzneutralität, drosselkom, specialised services, echtesnetz, BEREC, Internetneutralität, Plattformneutralität, Neutralitätsdebatte">
-
-
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 
 
@@ -25,18 +24,18 @@
 <nav id="navbar">
 	<div class="ninesixty">
 		<div id="langnav">
-			<a href="#"><img src="/img/Language-Button.png" /></a>
+			<a href="#">Language</a>
 			<ul class="unstyle" id=langselect>
 				<li><a href="http://savetheinternet.eu/en/">EN</a></li>
 			</ul>
 		</div>
 		<div id="mainnav">
 			<ul class="unstyle">
-				<li><a href="#why">Why</a></li>
-				<li><a href="#what">What</a></li>
-				<li><a href="#when">When</a></li>
-				<li><a href="#how">How</a></li>
-				<li><a href="#act">Take Action</a></li>
+				<li><a id="gotoWhy" href="#why">Why</a></li>
+				<li><a id="gotoWhat" href="#what">What</a></li>
+				<li class="hideMobile"><a id="gotoWhen" href="#when">When</a></li>
+				<li class="hideMobile"><a id="gotoHow" href="#how">How</a></li>
+				<li><a id="gotoAct" href="#act">Take Action</a></li>
 			</ul>
 		</div>
 	</div>
@@ -116,7 +115,7 @@
 	<div id="what" class="ninesixty">
 		<h3>What is happening?</h3>
 		<div style="text-align:center;">
-			<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/fpbOEoRrHyU?rel=0" frameborder="0" allowfullscreen></iframe>
+			<iframe class="ytVid" width="640" height="360" src="https://www.youtube-nocookie.com/embed/fpbOEoRrHyU?rel=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class="description">
 		<p>
@@ -152,13 +151,13 @@
 			<div class="actArea">
 				<div class="actList">
 					<a href="#actBoxFax" class="actItem" id="chooseFax">
-						<img class="actIcon" src="img/iconFax.png">
+						<span class="iconFax"></span>
 						<div class="actText">FAX</div>
 					</a><a href="#actBoxTweet" class="actItem" id="chooseTweet">
-						<img class="actIcon" src="img/iconTwitter.png">
+						<span class="iconTwitter"></span>
 						<div class="actText">Tweet</div>
 					</a><a href="#actBoxMail" class="actItem" id="chooseMail">
-						<img class="actIcon" src="img/iconEmail.png">
+						<span class="iconEmail"></span>
 						<div class="actText">EMail</div>
 					</a>
 				</div>
@@ -213,29 +212,24 @@
 				</div>
 				
 				<div class="actbox" id="actBoxFax">
-					<p>Fax your MEPs! Demand the enforcement of a true and unconditional Net neutrality!</p>
 					<div id="faxiframe" class="actboxitem">
-						<object data="https://faxjh.savetheinternet.eu/sti/fax/" width="630" height="355"></object>
+						<object data="https://faxjh.savetheinternet.eu/sti/fax/" class="actionBox"></object>
 					</div>
-					<a onclick="nextmep()" class="nextmep">Get another MEP</a>
 				</div>
 				<div class="actbox" id="actBoxTweet">
-					<p>Tweet MEPs! Demand the enforcement of a true and unconditional Net neutrality!</p>
 					<div class="actboxitem">
 						<div id="tweetiframe">
-							<object data="https://faxjh.savetheinternet.eu/sti/tweet/" width="630" height="335"></object>
+							<object data="https://faxjh.savetheinternet.eu/sti/tweet/" class="actionBox"></object>
 						</div>
 					</div>
-					<a onclick="nextmep()" class="nextmep">Get another MEP</a>
 				</div>
 
 				<div class="actbox" id="actBoxMail">
-					<p>E-Mail MEPs! Demand the enforcement of a true and unconditional Net neutrality!</p>
 					<div id="mailiframe" class="actboxitem">
-						<object data="https://faxjh.savetheinternet.eu/sti/mail/" width="630" height="390"></object>
+						<object data="https://faxjh.savetheinternet.eu/sti/mail/" class="actionBox"></object>
 					</div>
-					<a onclick="nextmep()" class="nextmep">Get another MEP</a>
 				</div>
+				<a onclick="nextmep()" class="nextmep">Get another MEP</a>
 				<div class="clr"></div>
 			</div>
 
@@ -244,7 +238,7 @@
 			<h2>Stay informed!</h2>
 
 			<div class="newsletter-box">
-				<form action="http://mailman.edri.org/mailman/subscribe/savetheinternet/" method="post">
+				<form action="https://mailman.edri.org/mailman/subscribe/savetheinternet/" method="post">
 					<input id="newsletter-email" name="email" placeholder="Email address" type="email">
 					<label for="country_selector" class="sr-only">Country</label>
 					<select id="newsletter_country">
@@ -294,11 +288,11 @@
 </section>
 
 <section id="when">
-	<div class="sixforty">
+	<div class="seventwenty">
 		<a href="javascript:void(0)" id="toggle_when"><h4>Click here to see our</h4></a>
 		<h3>TIMELINE TO SAVE THE INTERNET</h3>
 
-		<div class="toggled_container">
+		<div class="toggled_container" id="toggleWhen">
 			<ul>
 				<li>30 June 2010: European Commission launches consultation on net neutrality</li>
 				<li>11 September 2013: European Commission proposal for the “Telecon Single Market” includes a fake version of net neutrality which actually went against it.</li>
@@ -320,10 +314,10 @@
  </section>
 
 <section id="how">
-	<div class="sixforty">
+	<div class="seventwenty">
 		<a href="javascript:void(0)" id="toggle_how"><h4>Click here to see our</h4></a>
 		<h3>How to Contact Your MEP</h3>
-		<div class="toggled_container">
+		<div class="toggled_container" id="toggleHow">
 			<p class="description">Act now to tell your representatives to protect our rights and freedoms. The best way to do this is by calling a Member of the European Parliament (MEP). But you can also send them a Fax, a letter or an E-Mail - we provide you with all the information and calling them is free of charge.</p>
 
 			<h5>General advice</h5>
