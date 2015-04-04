@@ -58,6 +58,8 @@ h3 {
 #why {
   margin-top: -50px;
   padding-top: 80px;
+  font: 32px/40px Montserrat-Bold;
+  letter-spacing: 0.1em;
 }
 
 #what {
@@ -67,13 +69,13 @@ h3 {
 
 h3:after {
 	content: "";
-	width: 200px;
+	width: 100px;
 	border-bottom: 4px solid #1a1a1a;
 	height: 5px;
 	position: absolute;
 	left: 50%;
-	margin-left: -100px;
-	bottom: 12px;
+	margin-left: -50px;
+	bottom: 5px;
 }
 
 h3.contactNow:after {
@@ -238,7 +240,7 @@ td > a {
 #header {
 	text-align:center;
 	color: #000;
-	padding: 150px 0 0;
+	padding: 190px 0 0;
 	background: #FAB53D url(../img/Homepage-Background.png) center center no-repeat;
 }
 
@@ -565,6 +567,7 @@ h5:before, h5:after {
 	display: inline-block;
 	width:26%;
 	padding: 2%;
+	margin-top: 2%;
 	text-decoration:none;
 }
 
@@ -577,7 +580,8 @@ h5:before, h5:after {
 .actText {
 	display:inline-block;
 	vertical-align:middle;
-	font: 1.7em/1.2em Montserrat-regular;
+	font: 1.3em/1.2em Montserrat-regular;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	margin-left: .3em;
 
@@ -652,7 +656,7 @@ ul#ui-id-1 {
 .ask {
 	font-weight: bold;
 	font-size: 1.25em;
-	margin: 1%;
+	margin: 0.5% 1% 5% 1%;
 }
 
 
@@ -694,8 +698,8 @@ footer {
 
 .contactNow {
 	padding: 0;
-	margin: 2.5em 0 0.5em;
-
+	margin: 2.9em 0 0.5em;
+	font: 36px/40px Montserrat-Bold;
 }
 
 .choose {
@@ -788,9 +792,10 @@ div.toggled_container {
 	display: none;
 }
 
-a.button {
-	padding: 5px;
-	border: 3px red;
+span.button {
+	margin: 45px 0 0 0;
+	padding: 15px;
+	border: 7px red;
 }
 
 
