@@ -40,7 +40,7 @@ a {
 h2 {
 	font: 36px/40px Montserrat-Bold;
 /*	border-bottom: 1px solid #fff; */
-	padding: 90px 0 10px;
+	padding: 120px 0 10px;
 	margin: -40px 0 10px;
 	text-transform:uppercase;
 	text-align:center;
@@ -74,6 +74,17 @@ h3:after {
 	left: 50%;
 	margin-left: -100px;
 	bottom: 12px;
+}
+
+h3.contactNow:after {
+	content: "";
+	width: 100px;
+	border-bottom: 4px solid #1a1a1a;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+	bottom: 75px;
 }
 
 .divline {
@@ -235,14 +246,14 @@ td > a {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 20px;
-	margin: 0;
-	font: 21px/1.2em Montserrat-regular;
-	letter-spacing: 3px;
+	margin: 40px 0px 20px 0px;
+	font: 25px/1.2em Montserrat-Bold;
+	letter-spacing: 1.5px;
 }
 
 .teaser {
-	margin: 30px;
-	font: 21px/1.2em Montserrat-regular;
+	margin: 15px 30px 60px 30px;
+	font: 18px/1.2em Montserrat-regular;
 	text-align:center;
 }
 
@@ -301,6 +312,7 @@ td > a {
 }
 
 .description {
+	padding-bottom: 35px;
 	color: #252527;
 	font: 18px/1.2em SourceSansPro-Regular, sans-serif;
 }
@@ -565,7 +577,7 @@ h5:before, h5:after {
 .actText {
 	display:inline-block;
 	vertical-align:middle;
-	font: 3em/1.2em Montserrat-regular;
+	font: 1.7em/1.2em Montserrat-regular;
 	text-transform: uppercase;
 	margin-left: .3em;
 
@@ -682,9 +694,9 @@ footer {
 
 .contactNow {
 	padding: 0;
-	margin: 1.5em 0 .8em;
-}
+	margin: 2.5em 0 0.5em;
 
+}
 
 .choose {
   list-style: none;
