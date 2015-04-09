@@ -236,13 +236,19 @@ $(".actItem").click(function(event) {
 $("#goTweet").click(function() {
 	$(".actbox").hide();
 	$("#actBoxTweet").show();
+  $('#chooseTweet').addClass("current");
+  $('#chooseTweet').siblings().removeClass("current");
 });
 $("#goFax").click(function() {
 	$(".actbox").hide();
 	$("#actBoxFax").show();
+  $('#chooseFax').addClass("current");
+  $('#chooseFax').siblings().removeClass("current");
 });
 $("#goMail").click(function() {
 	$(".actbox").hide();
 	$("#actBoxMail").show();
+  $('#chooseMail').addClass("current");
+  $('#chooseMail').siblings().removeClass("current");
 });
 
