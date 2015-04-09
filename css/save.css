@@ -684,9 +684,13 @@ div#toggleWhen ul {
   list-style-type: square;
 }
 #when li {
-  margin: .7em 0;
+  margin: 0.7em 0 1.9em
 }
 
+span.timeinline {
+	background: #cef;
+	padding: 2px;
+}
 
 #toggle_when, 
 #toggle_how 
@@ -921,3 +925,4 @@ div.toggled_container {
   clip: rect(0px, 0px, 0px, 0px);
   border: 0 none;
 }
+
