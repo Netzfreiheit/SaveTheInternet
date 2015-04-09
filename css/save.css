@@ -320,7 +320,7 @@ td > a {
 	font: 18px/1.2em SourceSansPro-Regular, sans-serif;
 }
 
-#regulation, #howto {
+#howto {
 	background: #e6e7e8;
 	padding: 40px 0 80px;
 	font-size: 14px;
@@ -331,9 +331,9 @@ td > a {
 	padding: 40px 0 30px;
 }
 
-#contact {
-	font-size: 14px;
-	line-height: 16px;
+#contact, #regulation, #contact {
+	font-size: 16px;
+	line-height: 18px;
 }
 
 #critics {
