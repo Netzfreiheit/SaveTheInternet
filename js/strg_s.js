@@ -104,7 +104,7 @@ function setCountdown (e, twords) {
 }
 
 function setSMLinks(o, twords, e) {
-  var tweet = 'http://twitter.com/home?status=' + encodeURIComponent((twords['smprefix']||'') + o.join(' ') + (twords['smsuffix']||''));
+  var tweet = 'https://twitter.com/home?status=' + encodeURIComponent((twords['smprefix']||'') + o.join(' ') + (twords['smsuffix']||''));
   $('#tw_count_bg a').attr('href', tweet);
   $(e).attr('href', tweet);
 }
