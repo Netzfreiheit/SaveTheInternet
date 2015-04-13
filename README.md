@@ -7,7 +7,7 @@ european campaign website to protect the free and neutral internet [SaveTheInter
 - we always need help with translations in other languages or reviewers of the work of other translators
 - talk about the campaign, tell your friends
 - call MEPs, write e-mails, send them a fax or an letter
-- [put an banner on your website](http://www.savetheinternet.eu/banner.zip "download banner pack")
+- [put an banner on your website](http://www.savetheinternet.eu/docs/SaveTheInternet.eu_Media_Materials.zip "download banner pack")
 - share the website on social media platforms
 - be creative and come up with ideas we haven't thought about
 
