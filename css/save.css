@@ -86,7 +86,7 @@ h3.contactNow:after {
 	position: absolute;
 	left: 50%;
 	margin-left: -60px;
-	bottom: 75px;
+	top: -25px;
 }
 
 .divline {
@@ -242,6 +242,7 @@ td > a {
 	color: #000;
 	padding: 190px 0 0;
 	background: #FAB53D url(../img/Homepage-Background.png) center center no-repeat;
+	background-size: cover;
 }
 
 .subheadline {
@@ -374,7 +375,7 @@ td > a {
 
 .actionBox {
 	width: 100%;
-	height: 400px;
+	height: 410px;
 }
 
 #sharebox {
@@ -639,6 +640,11 @@ h5:before, h5:after {
 	text-align: center;
 }
 
+#newsletter-submit {
+  background: #FAB53D;
+  border: solid #FAB53D;
+}
+
 .mepFilter > select, .mepFilter > input, .newsletter-box select, .newsletter-box input {
   font-size: 1em;
   padding: .3%;
@@ -667,9 +673,9 @@ ul#ui-id-1 {
 .ask {
 	font-weight: bold;
 	font-size: 1.25em;
-	margin: 0.5% 1% 5% 1%;
+    letter-spacing: .05em;
 	line-height: 1.2;
-
+	margin: 0.5% 1% 5% 1%;
 }
 
 #when, #how {
@@ -869,10 +875,14 @@ footer {
 }
 
 @media screen and (max-width: 600px){
+
+	h3 {
+		font: 28px/40px Montserrat-Bold;
+	}
 	.actText {
 		display: block;
 		margin: .3em 0;
-		font-size: 1.8em;
+		font-size: 1.4em;
 	}
 	.hideMobile {
 		display:none;
