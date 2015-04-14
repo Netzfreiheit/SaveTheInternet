@@ -1,8 +1,8 @@
 RewriteEngine On
 RewriteCond %{HTTP:Accept-Language} ^de [NC]
 RewriteRule ^$ /de/ [L,R=301]
-#RewriteCond %{HTTP:Accept-Language} ^pl [NC]
-#RewriteRule ^$ /pl/ [L,R=301]
+RewriteCond %{HTTP:Accept-Language} ^pl [NC]
+RewriteRule ^$ /pl/ [L,R=301]
 #RewriteCond %{HTTP:Accept-Language} ^es [NC]
 #RewriteRule ^$ /es/ [L,R=301]
 #RewriteCond %{HTTP:Accept-Language} ^fr [NC]
