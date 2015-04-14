@@ -152,6 +152,9 @@ td > a {
 	margin: 5px 0;
 }
 
+.whyblock > p {
+	text-align: left;
+}
 
 .ninesixty {
 	_width: 960px;
