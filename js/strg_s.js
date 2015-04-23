@@ -29,6 +29,7 @@ function handle_actiontab (curr) {
 function nextmep() {
   var els=[document.getElementById("tweetiframe"),
   document.getElementById("faxiframe"),
+  document.getElementById("phoneiframe"),
   document.getElementById("mailiframe")];
   for (i in els) {
     var e=els[i]
@@ -159,7 +160,7 @@ function select_one_mep(event, ui) {
 }
 
 function load_meps (get_params) {
-  $('#tweetiframe object, #faxiframe object, #mailiframe object').each(function (i, e) {
+  $('#tweetiframe object, #faxiframe object, #phoneiframe object, #mailiframe object').each(function (i, e) {
     $(e).attr('data', $(e).attr('data').replace(/\?.*/,'') + get_params);
   });
   nextmep();
@@ -222,8 +223,8 @@ $(function () {
 
 /* switch between contact methodes */
 $('.actbox').hide();
-$('#actBoxFax').show();
-$('#chooseFax').addClass("current");
+$('#actBoxPhone').show();
+$('#choosePhone').addClass("current");
 $(".actItem").click(function(event) {
 	event.preventDefault();
 	$(this).addClass("current");
@@ -231,6 +232,11 @@ $(".actItem").click(function(event) {
 	var tab = $(this).attr("href");
 	$(".actbox").not(tab).hide();
 	$(tab).fadeIn();
+  if ((tab||'').indexOf('Phone') == -1) {
+    $('.mepFilter').show();
+  } else {
+    $('.mepFilter').hide();
+  }
 });
 
 $("#goTweet").click(function() {
@@ -238,17 +244,27 @@ $("#goTweet").click(function() {
 	$("#actBoxTweet").show();
   $('#chooseTweet').addClass("current");
   $('#chooseTweet').siblings().removeClass("current");
+  $('.mepFilter').show();
 });
 $("#goFax").click(function() {
 	$(".actbox").hide();
 	$("#actBoxFax").show();
   $('#chooseFax').addClass("current");
   $('#chooseFax').siblings().removeClass("current");
+  $('.mepFilter').show();
+});
+$("#goPhone").click(function() {
+  $(".actbox").hide();
+  $("#actBoxPhone").show();
+  $('#choosePhone').addClass("current");
+  $('#choosePhone').siblings().removeClass("current");
+  $('.mepFilter').hide();
 });
 $("#goMail").click(function() {
 	$(".actbox").hide();
 	$("#actBoxMail").show();
   $('#chooseMail').addClass("current");
   $('#chooseMail').siblings().removeClass("current");
+  $('.mepFilter').show();
 });
 

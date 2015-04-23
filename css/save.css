@@ -575,7 +575,7 @@ h5:before, h5:after {
 
 .actItem {
 	display: inline-block;
-	width:26%;
+	width:20%;
 	padding: 2%;
 	margin-top: 2%;
 	text-decoration:none;
@@ -612,7 +612,7 @@ h5:before, h5:after {
 .actList > .actItem {
   background: rgba(26, 26, 26, 0.7);
   color: #FFFFFF;
-  width: 26%;
+  width: 17%;
   margin: 0 1% 0 0;
   padding: 2% 3.33%;
   text-align: center;
@@ -633,6 +633,7 @@ h5:before, h5:after {
 }
 
 .mepFilter, .newsletter-box {
+	display: none;
   padding: .6em 0;
   margin: 0 -.66%;
   position:relative;
@@ -796,7 +797,7 @@ footer {
   
 }
 
-.iconFax, .iconTwitter, .iconEmail {
+.iconFax, .iconTwitter, .iconEmail, .iconPhone {
   width: 56px;
   height: 56px;
   overflow: hidden;
@@ -811,6 +812,8 @@ footer {
 .current > .iconTwitter { background-position: -56px -56px; }
 .iconEmail { background-position: -112px 0; }
 .current > .iconEmail { background-position: -112px -56px; }
+.iconPhone { background-position: -168px 0; }
+.current > .iconPhone { background-position: -168px -56px; }
 
 @media screen and (max-width: 1100px){
 	#share {

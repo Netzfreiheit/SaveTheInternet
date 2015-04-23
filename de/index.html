@@ -70,6 +70,10 @@
 			<h3 class="contactNow">Kontaktiere jetzt Deinen Abgeordneten!</h3>
 			<div id="takeactionbt">
 				<a class="actBt" href="#act">
+					<div class="actItem" id="goPhone">
+						<img class="actIcon" src="/img/iconPhone.png">
+						<div class="actText">Call</div>
+					</div>
 					<div class="actItem" id="goFax">
 						<img class="actIcon" src="/img/iconFax.png">
 						<div class="actText">Fax</div>
@@ -161,7 +165,10 @@
 			
 			<div class="actArea">
 				<div class="actList">
-					<a href="#actBoxFax" class="actItem" id="chooseFax">
+					<a href="#actBoxPhone" class="actItem" id="choosePhone">
+						<span class="iconPhone"></span>
+						<div class="actText">Phone</div>
+					</a><a href="#actBoxFax" class="actItem" id="chooseFax">
 						<img class="actIcon" src="/img/iconFax.png">
 						<div class="actText">FAX</div>
 					</a><a href="#actBoxTweet" class="actItem" id="chooseTweet">
@@ -222,6 +229,15 @@
 					<input id="mep_selector" placeholder="Suchen" size="30">
 				</div>
 				
+				<div class="actbox" id="actBoxPhone">
+					<div id="phoneiframe" class="actboxitem">
+						<center>
+							<br/>
+							<br/>
+							<object data="http://piphone.lqdn.fr/campaign/widget2/NetNeutrality_2015/horiz/en" width="630" height="200"></object>
+						</center>
+					</div>
+				</div>
 				<div class="actbox" id="actBoxFax">
 					<p>Schicke ein Fax! Verlange die Durchsetzung einer echten und unbedingten Netzneutralität!</p>
 					<div id="faxiframe" class="actboxitem">
