@@ -381,6 +381,10 @@ td > a {
 	height: 410px;
 }
 
+.actionBox_heigh {
+	height: 912px;
+}
+
 #sharebox {
 	text-align:center;
 }

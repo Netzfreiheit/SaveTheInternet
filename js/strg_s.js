@@ -236,7 +236,7 @@ $(".actItem").click(function(event) {
 	var tab = $(this).attr("href");
 	$(".actbox").not(tab).hide();
 	$(tab).fadeIn();
-  if ((tab||'').indexOf('Phone') == -1) {
+  if ((tab||'').indexOf('Phone') == -1 && (tab||'').indexOf('Fax') == -1) {
     $('.mepFilter').show();
   } else {
     $('.mepFilter').hide();
@@ -255,7 +255,7 @@ $("#goFax").click(function() {
 	$("#actBoxFax").show();
   $('#chooseFax').addClass("current");
   $('#chooseFax').siblings().removeClass("current");
-  $('.mepFilter').show();
+  $('.mepFilter').hide();
 });
 $("#goPhone").click(function() {
   $(".actbox").hide();
