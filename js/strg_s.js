@@ -52,7 +52,7 @@ $(function () {
      }
   });
   // sanitize country selection during focus on small group of negotiators
-  $('#country_selector option:not([value=es],[value=gb],[value=de],[value=pt],[value=at],[value=dk],[value=it])').attr('disabled','disabled')
+  //$('#country_selector option:not([value=es],[value=gb],[value=de],[value=pt],[value=at],[value=dk],[value=it])').attr('disabled','disabled')
 });
 
 /*
