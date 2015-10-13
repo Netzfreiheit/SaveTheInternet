@@ -114,7 +114,7 @@ function setSMLinks(o, twords, e) {
 
 $(function () {
   try {
-    var twords = _translate_twords[((window.location.pathname + '').match(/\w\w/)||[])[0]||'en'];
+    var twords = _translate_twords[((window.location.pathname + '').match(/\w\w/)||[])[0]||'en'] || _translate_twords['en'];
     var e = $('.countdown a'); 
     if (e) {
       setCountdown(e, twords);
