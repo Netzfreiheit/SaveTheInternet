@@ -277,3 +277,8 @@ $("#goMail").click(function() {
   $('.mepFilter').show();
 });
 
+var no_fax = true;
+if (no_fax) {
+  $('#goFax,#chooseFax').hide();
+  $('.actList > .actItem').css('width','25%');
+}
