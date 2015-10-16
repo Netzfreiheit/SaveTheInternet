@@ -32,12 +32,14 @@ function nextmep() {
   document.getElementById("phoneiframe"),
   document.getElementById("mailiframe")];
   for (i in els) {
-    var e=els[i]
-    var h=e.innerHTML
-    e.innerHTML=""
-    e.innerHTML=h
+    var e=els[i];
+    if (e) {
+      var h=e.innerHTML
+      e.innerHTML=""
+      e.innerHTML=h  
+    }
   }
- }
+}
 
 
 $(function () {
