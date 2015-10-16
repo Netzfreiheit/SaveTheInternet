@@ -536,6 +536,7 @@ h5:before, h5:after {
 	background-color: #15BDBF;
 	background-color: #3460A5;
 	background-color: #FAB53D;
+	background-color: #CC0000;
 	color: #FFF;
 	font-family: Montserrat-Bold;
 	font-size: 16px;
@@ -545,13 +546,13 @@ h5:before, h5:after {
 	margin: 0 auto;
 	text-decoration: none;
 	border-top: 0px solid #FFF;
-	border-bottom: 4px solid #FAD55D;
+	border-bottom: 4px solid #E2251C;
 	transition: border 0.25s;
 }
 
 .linkbutton:hover {
 	border-top: 4px solid #FFF;
-	border-bottom: 0px solid #FAD55D;
+	border-bottom: 0px solid #E2251C;
 }
 
 
@@ -561,14 +562,14 @@ h5:before, h5:after {
 	margin-bottom: 30px;
 }
 
-.divbottomred,.divbottomwhite,.divtopwhite,.divbottomyellow  {
+.divbottomred,.divbottomwhite,.divtopwhite,.divbottomyellow,.divbottomactuallyred  {
 	position:relative;
 }
 .divtopwhite {
 	padding-top: 5px;
 }
 
-.divbottomred:after,.divbottomwhite:after,.divbottomyellow:after  {
+.divbottomred:after,.divbottomwhite:after,.divbottomyellow:after,.divbottomactuallyred:after  {
 	content: '';
 	position: absolute;
 	border-style: solid;
@@ -592,6 +593,11 @@ h5:before, h5:after {
 
 .divbottomyellow:after {
 	border-color: #FAB53D transparent;
+}
+
+.divbottomactuallyred:after
+{
+	border-color: #CC0000 transparent;
 }
 
 .divtopwhite:after {
@@ -668,6 +674,67 @@ h5:before, h5:after {
 #langnav:hover > #langselect {
 	display:block;
 }
+
+
+#bloatedshare
+{
+	position: fixed;
+	top: 100px;
+	left: 10px;
+	z-index: 50;
+}
+
+#tw_count_bg_bloated,#fb_count_bg_bloated,#gp_count_bg_bloated {
+	width:70px;
+	height:70px;
+	margin-bottom:10px;
+	display: block;
+	background-color: #EEE !important;
+	border-radius: 35px;
+	overflow: hidden;
+	position: relative;
+	transition: height 0.25s;
+}
+
+#bloatedshare li:hover 
+{
+	height: 110px;
+}
+
+#tw_count_bg_bloated {
+	background: url(../img/social_twitter_red.png) center 5px no-repeat;
+}
+
+#fb_count_bg_bloated {
+	background: url(../img/social_facebook_red.png) center 5px no-repeat;
+}
+#gp_count_bg_bloated {
+	background: url(../img/social_google_red.png) center 5px no-repeat;
+}
+
+#bloatedshare a 
+{
+	width: 60px;
+	height: 100px;
+	border-radius: 30px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	overflow: hidden;
+}
+
+.smcounter_bloated
+{
+	position: absolute;
+	top: 70px;
+	width: 100%;
+	text-align: center;
+	color: #111;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Montserrat-regular;
+}
+
 
 
 
