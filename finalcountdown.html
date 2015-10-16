@@ -1,0 +1,446 @@
+﻿<!doctype html>
+
+<head>
+	<title>Save the Internet - contact your representative today!</title>
+	<link rel="stylesheet" href="/js/jquery-ui-1.11.3.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/save.css">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" charset="utf-8">
+	<meta name="description" content="Save the Internet in Europe">
+	<link rel="icon" href="/img/favicon.png" type="image/png">
+	<meta name="author" content="Initiative für Netzfreiheit, European Digital Rights">
+	<meta name="keywords" content="net neutrality, connected conntinent, digital single market, dsm, neelie kroes, Netzneutralität, drosselkom, specialised services, echtesnetz, BEREC, Internetneutralität, Plattformneutralität, Neutralitätsdebatte">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="https://savetheinternet.eu/img/savetheinternet-banner-wide.jpg" />
+	<meta property="og:title" content="Save the Internet in Europe" />
+	<meta property="og:url" content="https://www.savetheinternet.eu" />
+	<meta property="og:description" content="Defend net neutrality: Contact the Parliament now!" />
+
+	<base href="http://www.timgrillmeier.com.au/savetheinternet/" target="_blank">
+</head>
+
+
+<body>
+
+	<noscript>
+		<!-- Piwik Image Tracker -->
+		<img src="https://piwik.netzfreiheit.org/piwik.php?idsite=11&amp;rec=1&amp;action_name=Save+the+Internet" style="border:0" alt="" />
+		<!-- End Piwik -->
+	</noscript>
+
+<!--nav id="navbar">
+	<div class="ninesixty">
+		<div id="langnav">
+			<a href="#">Language</a>
+			<ul class="unstyle" id="langselect">
+				<li><a href="http://savetheinternet.eu/en/">EN</a></li>
+				<li><a href="http://savetheinternet.eu/de/">DE</a></li>
+				<li><a href="http://savetheinternet.eu/pl/">PL</a></li>
+				<li><a href="http://savetheinternet.eu/fr/">FR</a></li>
+				<li><a href="http://savetheinternet.eu/es/">ES</a></li>
+				<li><a href="http://savetheinternet.eu/it/">IT</a></li>
+				<li><a href="http://savetheinternet.eu/cs/">CS</a></li>
+			</ul>
+		</div>
+		<div id="mainnav">
+			<ul class="unstyle">
+				<li><a id="gotoWhy" href="#why">Why</a></li>
+				<li><a id="gotoWhat" href="#what">What</a></li>
+				<li class="hideMobile"><a id="gotoWhen" href="#when">When</a></li>
+				<li class="hideMobile"><a id="gotoHow" href="#how">How</a></li>
+				<li><a id="gotoAct" href="#act">Take Action</a></li>
+			</ul>
+		</div>
+	</div>
+</nav-->
+
+<section id="share">
+	<ul class="unstyle">
+		<li id="tw_count_bg"><a href="https://twitter.com/home?status=Help%20save%20the%20internet.%20Tell%20your%20politician%20to%20safeguard%20net%20neutrality.%20http://www.savetheinternet.eu/%20%23ConnectedContinent%20#SaveTheInternetEU"><span class="smcounter" id="tw_counter"></span></a>
+		<li id="fb_count_bg"><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=http://www.savetheinternet.eu/&amp;p%5Bimages%5D%5B0%5D=http://www.savetheinternet.eu/img/thumbnail.png&amp;p%5Btitle%5D=Help%20Save%20the%20Internet&amp;p%5Bsummary%5D=Your%20freedom%20online%20is%20threatened%20by%20EU%20proposals.%20The%20fight%20for%20an%20open%20Internet%20is%20happening%20right%20now%20in%20Brussels."><span class="smcounter" id="fb_counter"></span></a>
+		<li id="gp_count_bg"><a href="https://plus.google.com/share?url=http://www.savetheinternet.eu/"><span class="smcounter" id="gp_counter"></span></a>
+	</ul>
+</section>
+
+
+<div id="home"></div>
+<section id="header" class="divbottomyellow">
+	<div class="headline">
+		<h1>
+			Final Countdown
+			<span>to</span>
+			Save the Internet<br>
+		</h1>
+	</div>
+	<h1 class="subheadline">
+		Net Neutrality in the EU is just few amendments away!
+	</h1>
+	<div id="bombcountdown">
+		<div class="bombdigitwrap">
+			<span class="bombdigitvalue" id="countdowndigitdays"></span>
+			<span class="bombdigitlabel" id="countdownlabeldays"></span>
+		</div>
+		<div class="bombdigitwrap">
+			<span class="bombdigitvalue" id="countdowndigithours"></span>
+			<span class="bombdigitlabel" id="countdownlabelhours"></span>
+		</div>
+		<div class="bombdigitwrap">
+			<span class="bombdigitvalue" id="countdowndigitminutes"></span>
+			<span class="bombdigitlabel" id="countdownlabelminutes"></span>
+		</div>
+		<div class="bombdigitwrap">
+			<span class="bombdigitvalue" id="countdowndigitseconds"></span>
+			<span class="bombdigitlabel" id="countdownlabelseconds"></span>
+		</div>
+	</div>
+	<div style="height:60px;"></div>
+</section>
+
+
+
+
+<section id="act" class="divbottomred">
+	<div class="alertbox">
+		<div class="ninesixty">
+			<div class=clr></div>
+			<h2>Take action now!</h2>
+
+			<p class="teaser">
+				We’re SO close to getting strong Net Neutrality rules in the EU.<br />
+				<span style="font-size:24px;margin-top:15px;display: block;">Ask your EU Parliamentarians to adopt the needed amendments.</span>
+			</p>
+
+			<div class="actArea">
+				<div class="actList">
+					<a href="#actBoxPhone" class="actItem" id="choosePhone">
+						<span class="iconPhone"></span>
+						<div class="actText">Phone</div>
+					</a><a href="#actBoxFax" class="actItem" id="chooseFax">
+						<span class="iconFax"></span>
+						<div class="actText">FAX</div>
+					</a><a href="#actBoxTweet" class="actItem" id="chooseTweet">
+						<span class="iconTwitter"></span>
+						<div class="actText">Tweet</div>
+					</a><a href="#actBoxMail" class="actItem" id="chooseMail">
+						<span class="iconEmail"></span>
+						<div class="actText">EMail</div>
+					</a>
+				</div>
+				<div class="mepFilter">
+					<label for="country_selector" class="sr-only">Choose by country</label>
+					<select id="country_selector">
+						<option value="">Filter by country</option>
+						<option value="at">Austria</option>
+						<option value="be">Belgium</option>
+						<option value="bg">Bulgaria</option>
+						<option value="hr">Croatia</option>
+						<option value="cy">Cyprus</option>
+						<option value="cz">Czech Republic</option>
+						<option value="dk">Denmark</option>
+						<option value="ee">Estonia</option>
+						<option value="fi">Finland</option>
+						<option value="fr">France</option>
+						<option value="de">Germany</option>
+						<option value="gr">Greece</option>
+						<option value="hu">Hungary</option>
+						<option value="it">Italy</option>
+						<option value="ie">Ireland</option>
+						<option value="lv">Latvia</option>
+						<option value="lt">Lithuania</option>
+						<option value="lu">Luxembourg</option>
+						<option value="mt">Malta</option>
+						<option value="nl">Netherlands</option>
+						<option value="pl">Poland</option>
+						<option value="pt">Portugal</option>
+						<option value="ro">Romania</option>
+						<option value="sk">Slovakia</option>
+						<option value="si">Slovenia</option>
+						<option value="es">Spain</option>
+						<option value="se">Sweden</option>
+						<option value="gb">United Kingdom</option>
+					</select>
+
+					<label for="group_selector" class="sr-only">Choose by political group</label>
+					<select id="group_selector">
+						<option value="">Filter by political group</option>
+						<option value="epp">EPP: European People's Party</option>
+						<option value="sd">S&amp;D: Socialists and Democrats</option>
+						<option value="ecr">ECR: European Conservatives and Reformists</option>
+						<option value="aldeadle">ALDE: Alliance of Liberals and Democrats</option>
+						<option value="guengl">GUE: European United Left</option>
+						<option value="greensefa">Greens: Greens/European Free Alliance</option>
+						<option value="ni">NI: Non-attached Members</option>
+						<option value="efd">EFDD: Europe of Freedom and Direct Democracy Group</option>
+					</select>
+					<label for="mep_selector" class="sr-only">Search</label>
+					<input id="mep_selector" placeholder="Search" size="30">
+				</div>
+
+				<div class="actbox" id="actBoxPhone">
+					<div id="phoneiframe" class="actboxitem">
+						<center>
+							<br/>
+							<p>You can choose a MEP from your country on the <a href="https://piphone.lqdn.fr/campaign/call2/NetNeutrality_2015_2/">PiPhone website</a>.</p>
+							<br/>
+							<object data="https://piphone.lqdn.fr/campaign/widget2/NetNeutrality_2015_2/horiz/en" width="630" height="200"></object>
+						</center>
+					</div>
+				</div>
+				<div class="actbox" id="actBoxFax">
+					<div id="faxiframe" class="actboxitem">
+						<object data="https://faxjh.savetheinternet.eu/sti/fax_personal/?language=en" class="actionBox actionBox_heigh"></object>
+					</div>
+				</div>
+				<div class="actbox" id="actBoxTweet">
+					<div class="actboxitem">
+						<div id="tweetiframe">
+							<object data="https://faxjh.savetheinternet.eu/sti/tweet/" class="actionBox"></object>
+						</div>
+					</div>
+				</div>
+
+				<div class="actbox" id="actBoxMail">
+					<div id="mailiframe" class="actboxitem">
+						<object data="https://faxjh.savetheinternet.eu/sti/mail/" class="actionBox"></object>
+					</div>
+				</div>
+				<a onclick="nextmep()" class="nextmep">Get another MEP</a>
+				<div class="clr"></div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="goals" class="divbottomwhite" style="margin-top:150px;">
+	<div class="ninesixty alertbox divbottomred">
+
+		<h3 id="why">Amendments</h3>
+		<div class="teaser">
+			These are the four missing pieces needed to deliver Net Neutrality in the EU
+		</div>
+		<div id="amendments">
+			<article class="amendmentblock">
+				<h3>
+					1. Prevent network discrimination
+				</h3>
+				<h4>
+					Large deep-pocketed companies should not be allowed to buy vip-tickets to prioritise their content over traffic from the rest of the internet.
+				</h3>
+				<p>
+					<span>What EU Parliamentarians need to do:</span> The criteria defining specialised services need to be clarified to avoid discrimination on the network.
+				</p>
+			</article>
+			<article class="amendmentblock">
+				<h3>
+					2. Treat all traffic equally 
+				</h3>
+				<h4>
+					All traffic should be treated equally over the internet so that both unencrypted and encrypted content are delivered as fast as possible.
+				</h3>
+				<p>
+					<span>What EU Parliamentarians need to do:</span> The provisions on traffic management must be modified to ensure equal treatment of traffic. Traffic management needs to be transparent, targeted and in accordance with the law.
+				</p>
+			</article>
+			<article class="amendmentblock">
+				<h3>
+					3. Freedom to ban zero-rating
+				</h3>
+				<h4>
+					ISPs should not be allowed to become gatekeepers and charge companies for the delivery their services. Anyone with a great idea should be able to reach internet users without having to pay a toll. 
+				</h3>
+				<p>
+					<span>What EU Parliamentarians need to do:</span> A provision needs to be added to enable Members states to ban those discriminatory practices.
+				</p>
+			</article>
+			<article class="amendmentblock">
+				<h3>
+					4. Managing network congestion
+				</h3>
+				<h4>
+					ISPs should be allowed to manage traffic in case of congestion, only if it is taking place.
+				</h3>
+				<p>
+					<span>What EU Parliamentarians need to do:</span> Rules on managing congestion needs to be clarified to avoid a situation where ISPs will be interfering with the network for discrimatory reason.
+				</p>
+			</article>
+		</div>
+		<div class="clr"></div>
+		<div class="clr"></div>
+		<div class="clr"></div>
+		<div class="clr"></div>
+
+		<div class="teaser" style="">
+			<a href="" alt="" target="_blank">See the actual amendments</a>
+		</div>
+		
+	<div class="clr">&nbsp;</div>
+	</div>
+	<div id="what" class="ninesixty" style="margin-top: -30px;">
+		<h3>What is Net Neutrality?</h3>
+		<div class="clr">&nbsp;</div>
+		<div style="text-align:center;">
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/g6fXpo8uQtA" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="clr">&nbsp;</div>
+		<div class="teaser">
+			Click <a href="https://savetheinternet.eu">here</a> for more information on <a href="https://savetheinternet.eu/#why">why</a>, <a href="https://savetheinternet.eu/#what">what</a>, <a href="https://savetheinternet.eu/#when">when</a> and <a href="https://savetheinternet.eu/#how">how</a> to Save the Internet.
+		</div>
+		<a class="linkbutton" style="margin-bottom:50px;" href="https://www.thisisnetneutrality.org/" target="_blank">Net Neutrality around the world &#10148;</a>
+		<h3>Counter and Sharing</h3>
+		<div class="teaser">
+			More than [amount of clicks] messages have been sent to EU Parliamentarians. Take action now!<br>
+			<br>
+			Ask your friends, colleagues and family to stand up for the internet! Share this campaign [Pointing to share buttons in the middle at the bottom of screen, or on the left side of screen]<br>
+			<br>
+			You have [number] days to let EU Parliamentarians hear your voice on Net Neutrality!
+
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class=ninesixty>
+		<p style="text-align:center;">We are concerned citizens from NGOs around Europe that care about civil liberties in the digital realm.</p> 
+		<ul class=footerlogos style="width:100%">
+		<li>
+			<a href="https://netzfreiheit.org/">
+				<img src="/img/ifnf.png" /><br>
+				Initiative für Netzfreiheit (AT)
+			</a>
+		</li>
+		<li>
+			<a href="https://edri.org/">
+				<img src="/img/edri.png" /><br>
+				European Digital Rights (EU)
+			</a>
+		</li>
+		<li>
+			<a href="https://www.accessnow.org">
+				<img src="/img/access.png" /><br>
+				Access Now (international)
+			</a>
+		</li>
+		<li>
+			<a href="https://digitalegesellschaft.de">
+				<img src="/img/digiges.png" /><br>
+				Digitale Gesellschaft (DE)
+			</a>
+		</li>
+		<li>
+			<a href="https://www.laquadrature.net/">
+				<img src="/img/lqdn.png" /><br>
+				La Quadrature du Net (FR)
+			</a>
+		</li>
+		<li>
+			<a href="https://www.bof.nl/">
+				<img src="/img/bof.png" /><br>
+				Bits of Freedom (NL)
+			</a>
+		</li>
+		<li>
+			<a href="http://en.rsf.org/">
+				<img src="/img/reporters_without_borders.png" /><br>
+				Reporters Without Borders (international)
+			</a>
+		</li>
+		<li>
+			<a href="https://www.openrightsgroup.org">
+				<img src="/img/org.png" /><br>
+				Open Rights Group (UK)
+			</a>
+		</li>
+		<li>
+			<a href="http://itpol.dk/">
+				<img src="/img/itpol.png" /><br>
+				IT-Politisk Forening (DK)
+			</a>
+		</li>
+		<li>
+			<a href="http://xnet-x.net">
+				<img src="/img/xnet.png" /><br>
+				Xnet (ES)
+			</a>
+		</li>
+		<li>
+			<a href="http://www.info-hisa.si">
+				<img src="/img/infohouse.png" /><br>
+				Info House (SL)
+			</a>
+		</li>
+		<li>
+			<a href="http://www.startupsfornetneutrality.org">
+				<img src="/img/startups4nn.png" /><br>
+				Startups for Net Neutrality (international)
+			</a>
+		</li>
+		</ul>
+	</div>
+<div class=clr></div>
+</footer>
+
+
+	<script type="text/javascript" src="/js/jquery-latest.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/js/strg_s.js"></script>
+	<script type="text/javascript" src="/js/share.json"></script>
+
+	<script>
+	$(function () {
+		if (typeof window.shares === 'undefined') {
+		window.shares = {'twitter': 4883 , 'facebook': 7350 , 'linkedin': 0 , 'google': 958};
+		}
+		$('#tw_counter').html(window.shares['twitter'] );
+		$('#fb_counter').html(window.shares['facebook']);
+		$('#gp_counter').html(window.shares['google']);
+	});
+
+
+
+
+	/* smooth scrolling */
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 800);
+			return false;
+		  }
+		}
+	  });
+	});
+
+
+	</script>
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+ var _paq = _paq || [];
+ _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+ _paq.push(["setCookieDomain", "*.savetheinternet.eu"]);
+ _paq.push(["setDomains", ["*.savetheinternet.eu"]]);
+ _paq.push(["setDoNotTrack", true]);
+ _paq.push(["trackPageView"]);
+ _paq.push(["enableLinkTracking"]);
+ (function() {
+	 var u=(("https:" == document.location.protocol) ? "https" : "http")
++ "://piwik.netzfreiheit.org/";
+	 _paq.push(["setTrackerUrl", u+"piwik.php"]);
+	 _paq.push(["setSiteId", "11"]);
+	 var d=document, g=d.createElement("script"),
+s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+	 g.defer=true; g.async=true; g.src=u+"piwik.js";
+s.parentNode.insertBefore(g,s);
+ })();
+</script>
+ <!-- End Piwik Code -->
+
+</body>
