@@ -55,6 +55,90 @@ $(function () {
   //$('#country_selector option:not([value=es],[value=gb],[value=de],[value=pt],[value=at],[value=dk],[value=it])').attr('disabled','disabled')
 });
 
+var plenary_vote = new Date(2015, 9, 27, 08, 00);
+
+
+// bomb countdown
+function setBombCountdown()
+{
+  var ms = plenary_vote.valueOf()-(new Date()).valueOf()
+    , d = Math.floor(ms/(1000*60*60*24))
+    , h = Math.floor(ms/(1000*60*60)%24)
+    , m = Math.floor(ms/(1000*60)%60)
+    , s = Math.floor(ms/1000%60)
+  ;
+
+  // Set days
+  if (d == 1) {
+    $('#countdownlabeldays').html('Day');
+  } else if(d < 0) {
+    d = d.toString();
+    d = '00';
+    $('#countdownlabeldays').html('Days');
+  } else {
+    $('#countdownlabeldays').html('Days');
+  }
+  d = d+''; 
+  if (d.length < 2) {
+    d = d.toString();
+    d = '0'+d;
+  }
+  $('#countdowndigitdays').html(d);
+
+  // Set hours
+  if (h == 1) {
+    $('#countdownlabelhours').html('Hour');
+  } else if(h < 0) {
+    h = h.toString();
+    h = '00';
+    $('#countdownlabelhours').html('Hours');
+  } else {
+    $('#countdownlabelhours').html('Hours');
+  }
+  h = h+''; 
+  if (h.length < 2) {
+    h = h.toString();
+    h = '0'+h;
+  }
+  $('#countdowndigithours').html(h);
+
+  // Set minutes
+  if (m == 1) {
+    $('#countdownlabelminutes').html('Minute');
+  } else if(m < 0) {
+    m = m.toString();
+    m = '00';
+    $('#countdownlabelminutes').html('Minutes');
+  } else {
+    $('#countdownlabelminutes').html('Minutes');
+  }
+  m = m+''; 
+  if (m.length < 2) {
+    m = m.toString();
+    m = '0'+m;
+  }
+  $('#countdowndigitminutes').html(m);
+
+  // Set minutes
+  if (s == 1) {
+    $('#countdownlabelseconds').html('Second');
+  } else if(s < 0) {
+    s = s.toString();
+    s = '00';
+    $('#countdownlabelseconds').html('Seconds');
+  } else {
+    $('#countdownlabelseconds').html('Seconds');
+  }
+  s = s+''; 
+  if (s.length < 2) {
+    s = s.toString();
+    s = '0'+s;
+  }
+  $('#countdowndigitseconds').html(s);
+}
+
+setBombCountdown();
+window.setInterval('setBombCountdown()',1000);
 
 // countdown 
 var _translate_twords = {
