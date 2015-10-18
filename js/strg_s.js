@@ -148,6 +148,7 @@ var _translate_twords = {
   , 'de': {'hs': 'Stunden', 'ds': 'Tagen', 'ms': 'Minuten', 'ss': 'Sekunden', 'h': 'Stunde', 'd': 'Tag', 'm': 'Minute', 's': 'Sekunde', 'suffix': 'bis zur Abstimmung', 'prefix': 'Abstimmung in', 'smprefix': 'Noch ', 'smsuffix': ' Zeit um das Internet zu retten. Take Action on http://savetheinternet.eu/de #Netzneutralität'}
   , 'fr': {'hs': 'heures', 'ds': 'jours', 'ms': 'minutes', 'ss': 'secondes', 'h': 'heure', 'd': 'jour', 'm': 'minute', 's': 'seconde', 'suffix': 'jusqu\'au vote', 'prefix': 'Vote dans', 'smprefix': 'Plus que ', 'smsuffix': ' pour sauver internet. Agissez, rendez-vous sur http://savetheinternet.eu/fr #netneutralité'}
   , 'es': {'hs': 'horas', 'ds': 'días', 'ms': 'minutos', 'ss': 'segundos', 'h': 'hora', 'd': 'día', 'm': 'minuto', 's': 'segundo', 'suffix': 'hasta el voto', 'prefix': 'Voto en', 'smprefix': 'Quedan ', 'smsuffix': ' para salvar internet. Actúa ahora en http://savetheinternet.eu/es #neutralidaddelared'}
+  , 'cs': {'hs': 'hodin', 'ds': 'dnů', 'ms': 'minut', 'ss': 'sekund', 'h': 'hodina', 'd': 'den', 'm': 'minuta', 's': 'sekunda', 'suffix': 'do hlasování', 'prefix': 'Plenární hlasování začne za', 'smprefix': 'Na záchranu Internetu zbývá ', 'smsuffix': ' Zapojte se na http://savetheinternet.eu #SitovaNeutralita '}
 };
 var plenary_vote = new Date(2015, 9, 27, 08, 00);
 
