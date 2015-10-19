@@ -57,7 +57,7 @@ $(function () {
   //$('#country_selector option:not([value=es],[value=gb],[value=de],[value=pt],[value=at],[value=dk],[value=it])').attr('disabled','disabled')
 });
 
-var plenary_vote = new Date(2015, 9, 27, 08, 00);
+var plenary_vote = new Date(2015, 9, 27, 08, 30);
 
 
 // bomb countdown
