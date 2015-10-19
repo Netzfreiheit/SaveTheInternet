@@ -647,8 +647,14 @@ h5:before, h5:after {
 
 
 #langnav {
-	float:right;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
+#langnav h4  {
+	margin: 0;
+}
+
 #langselect {
 	display:none;
 	position:absolute;
@@ -735,7 +741,11 @@ h5:before, h5:after {
 	font-family: Montserrat-regular;
 }
 
-
+#nniframe
+{
+	width: 640px;
+	height: 360px;
+}
 
 
 #share {
@@ -1032,6 +1042,53 @@ footer {
 
 @media screen and (max-width: 770px){
 
+	#nniframe
+	{
+		width: 500px;
+		height: 280px;
+	}
+
+	#bombcountdown
+	{
+		width: 415px;
+	}
+
+	.bombdigitwrap
+	{
+		width: 80px;
+		height: 110px;
+	}
+
+	.bombdigitvalue
+	{
+		width: 80px;
+		height: 80px;
+		font-size: 40px;
+		line-height: 80px;
+	}
+	.bombdigitlabel
+	{
+		width: 80px;
+		height: 30px;
+		font-size: 12px;
+		line-height: 30px;
+	}
+
+	#bloatedshare
+	{
+		left: -20px;
+		top: 20px;
+	}
+
+	#bloatedshare span 
+	{
+		text-align: right;
+		top: 60px;
+	}
+
+	#bloatedshare li:hover {
+		height: 70px;
+	}
 
 	#mainnav > ul > li > a {
 		padding: 20px 8px;
@@ -1088,6 +1145,42 @@ footer {
 
 @media screen and (max-width: 600px){
 
+	#nniframe
+	{
+		width: 400px;
+		height: 210px;
+	}
+
+	#bombcountdown
+	{
+		width: 275px;
+		padding: 10px;
+		padding-right: 5px;
+	}
+
+	.bombdigitwrap
+	{
+		width: 60px;
+		height: 90px;
+	}
+
+	.bombdigitvalue
+	{
+		width: 60px;
+		height: 60px;
+		font-size: 40px;
+		line-height: 60px;
+	}
+	.bombdigitlabel
+	{
+		width: 60px;
+		height: 30px;
+		font-size: 10px;
+		letter-spacing: 0px;
+		line-height: 30px;
+	}
+
+
 	.headline h1
 	{
 		font-size: 40px;
@@ -1132,6 +1225,66 @@ footer {
 		padding: 0 2%;
 	}
 }
+
+@media screen and (max-width: 440px){
+	.headline h1
+	{
+		font-size: 25px;
+		line-height: 25px;
+		margin-top: 20px;
+	}
+
+	.subheadline
+	{
+		padding: 0 40px;
+	}
+
+	#phoneiframe p
+	{
+		margin: 0 40px !important;
+	}
+
+	.teaser
+	{
+		padding: 0 20px;
+	}
+
+	#what h3
+	{
+		padding: 20px 20px;
+	}
+
+	#why
+	{
+		padding: 20px 40px;
+	}
+
+	#nniframe
+	{
+		width: 300px;
+		height: 160px;
+	}
+
+	.linkbutton
+	{
+		width: 100%;
+		max-width: 200px;
+		margin: 0 auto;
+	}
+
+	.amendmentblock 
+	{
+		padding: 0 15px 30px 55px;
+	}
+
+	.amendmentblock h3
+	{
+		padding: 15px 0;
+		font-size: 18px;
+		line-height: 18px;
+	}
+}
+
 
 ul.ui-autocomplete {
     list-style: none;
