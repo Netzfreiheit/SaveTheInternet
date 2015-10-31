@@ -41,22 +41,6 @@ function nextmep() {
   }
 }
 
-
-$(function () {
- $('span.mailcheat').each(
-   function (i, el) {         
-     if ($(el).attr('locip')) {
-         var host = $(el).attr('domip') || window.location.host
-         var mail = $(el).attr('locip') + '@' + host;
-       $(el).html('<a href="mailto:' + mail + '">' + ($(el).attr('inner') || mail || el.innerText || 'mail') + '</a>');
-     } else {
-       $(el).html(el.innerText.replace(/^(\w+\.\w+) \\at\\ (savetheinternet.eu)/, '<a href="mailto:$1@$2">$1@$2</a>'));
-     }
-  });
-  // sanitize country selection during focus on small group of negotiators
-  //$('#country_selector option:not([value=es],[value=gb],[value=de],[value=pt],[value=at],[value=dk],[value=it])').attr('disabled','disabled')
-});
-
 var plenary_vote = new Date(2015, 9, 27, 13, 0);
 
 
@@ -368,4 +352,24 @@ var no_fax = true;
 if (no_fax) {
   $('#goFax,#chooseFax').hide();
   $('.actList > .actItem').css('width','25%');
+}
+
+var md_div = "<div id='overlay'><div><p>$MSG$</p>[<a href='#' onclick=\"$('#overlay').toggle();\">close</a>]</div></div>"
+var md_msg = '<h3>Thank you for your support - the fight goes on! </h3><p class="dialog_p">On 27th October 2015 the European Parliament voted not to adopt amendments that would have brought clarity to the net neutrality regulation. The politicians decided not to decide and leave the responsibility to the unelected regulators and judges. </p><p class="dialog_p">Still the text that was adopted does not necessarily mean the death of net neutrality, if interpreted correctly and rigorously implemented. Now the committee of European regulators (BEREC) has to prepare guidelines that will give a binding interpretation to the ambiguous text and answer many questions about what real effects this regulation will have on freedom of expression and innovation in Europe. </p><p class="dialog_p">If you are designer, a web developer, a communication person, a comedian, or simply want to help with translation or getting active in any other way, please subscribe to <a href="http://mailman.edri.org/mailman/listinfo/savetheinternet">this mailinglist</a> or contact us via <span class="mailcheat" locip="info" domip="savetheinternet.eu" inner="info@savetheinternet.eu">info /at/ savetheinternet.eu</span>.</p><h3>The fight for net neutrality in Europe <br/>is not over </h3><p class="dialog_p">The BEREC guidelines have to be prepared between now and July 2016. These guidelines will be based on a consultation that is open for everyone. This is the step in which the fight for net neutrality that was key to successes in both the US and in India. To achieve the same success, we have to continue pushing for real net neutrality by convincing the regulators about the value of a free and open internet. Network discrimination and paid fast-lanes have to be prohibited. Regulators need the tools, mandate and duty to act and enforce this net neutrality. </p><p class="dialog_p">Help us update SaveTheInternet.eu and continue the fight for real net neutrality in Europe. In the near future, you will find here the information and tools you need to get active in defense of your rights and freedoms on the internet. There is no need to contact the European Parliament at this point. We are looking forward to hearing from you! </p>'; 
+$(function () {
+  $('body').append(md_div.replace('$MSG$', md_msg));
+  apply_mailcheat();
+});
+
+function apply_mailcheat () {
+  $('span.mailcheat').each(
+   function (i, el) {         
+     if ($(el).attr('locip')) {
+         var host = $(el).attr('domip') || window.location.host
+         var mail = $(el).attr('locip') + '@' + host;
+       $(el).html('<a href="mailto:' + mail + '">' + ($(el).attr('inner') || mail || el.innerText || 'mail') + '</a>');
+     } else {
+       $(el).html(el.innerText.replace(/^(\w+\.\w+) \\at\\ (savetheinternet.eu)/, '<a href="mailto:$1@$2">$1@$2</a>'));
+     }
+  });
 }
