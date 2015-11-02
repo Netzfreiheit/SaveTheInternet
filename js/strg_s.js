@@ -362,7 +362,7 @@ var md_msg = {
 };
 $(function () { 
   if ((window.location.pathname || '').indexOf('background') == -1  && (window.location.pathname || '').indexOf('media') == -1 && (window.location.pathname || '').indexOf('contact') == -1 ) {
-    var msg = md_msg[(((window.location.pathname || '').match(/\w\w/) || [])[0] || 'en')];
+    var msg = md_msg[(((window.location.pathname || '').match(/\w\w/) || [])[0])] || md_msg['en'];
     $('body').append(md_div.replace('$MSG$', msg));
     apply_mailcheat();  
   }
