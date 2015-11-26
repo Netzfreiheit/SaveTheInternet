@@ -21,7 +21,7 @@ european campaign website to protect the free and neutral internet [SaveTheInter
 - click “commit changes” 
 - click “pull requests”
 - click “Click to create a pull request for this comparison” (that's to let us know about your changes to the website)
-- you are done and you are great! you helped strg+s the internet <3
+- you are done and you are great! you helped ctrl+s the internet <3
 
 **UPDATE:** please always work on up-to-date versions of your forked repository. if you forked your repository some time back then better delete it and fork again (or use comand line to update). 
 
